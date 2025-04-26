@@ -49,7 +49,7 @@ $ php artisan migrate
 ## ❗❗❗ Penyesuaian File Vendor pada project laravel anda
 
 <pre>
-Configuration-open-admin-panel-laravel-11/
+company-profile/
 ├── app
 ├── bootstrap
 ├── config
