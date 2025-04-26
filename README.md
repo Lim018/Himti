@@ -1,7 +1,6 @@
-# 🚀 Configuration Open Admin Panel Laravel 11
+# 🚀 Company Profile
 
-Deskripsi singkat tentang proyek Anda. Misalnya:  
-Sebuah aplikasi web untuk mengelola data pengguna dengan tampilan yang interaktif dan responsif menggunakan Laravel + Livewire.
+Project website Company Profile Himpunan Mahasiswa Teknik Informatika by WebDev 2025
 
 ---
 
