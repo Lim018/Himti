@@ -159,11 +159,12 @@
     bottom: 30vw;
 }
 
-#visi {
+#visi,
+#misi {
     width: 100vw;
     height: 100svh;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 5fr 6fr;
     background-color: #f5f5f5;
     font-family: "Inter", sans-serif;
     font-size: 24px;
@@ -176,15 +177,18 @@
     align-self: center;
 }
 
-#visileft {
+#visileft,
+#misileft {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     z-index: 1;
+    width: 80%;
 }
 
-#visileft h1 {
+#visileft h1,
+#misileft h1 {
     font-size: 4em;
     font-weight: 800;
     color: #133d87;
@@ -197,7 +201,16 @@
     letter-spacing: 0.4em;
     font-weight: 600;
     text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
-    transform: translate(-3.5em, 1em);
+    transform: translate(-6.3em, 1em);
+}
+
+#misileft p {
+    font-size: 0.7em;
+    color: #608bc0;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+    transform: translate(-7em, 1em);
 }
 
 #visiright {
@@ -208,4 +221,128 @@
     font-size: 1em;
     font-weight: 700;
     color: #133d87;
+}
+
+#misiright {
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+    font-size: 1em;
+    font-weight: 700;
+    color: #000000;
+}
+
+#misiright p {
+    text-align: justify;
+    margin-top: 25px;
+}
+
+#filosofi {
+    width: 100vw;
+    min-height: 100svh;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-family: "Inter", sans-serif;
+    flex-direction: column;
+    padding-bottom: 15vh;
+}
+
+#flsftop {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#flsftop h1 {
+    font-size: 4em;
+    font-weight: 800;
+    color: #133d87;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+}
+
+#flsftop p {
+    font-size: 0.7em;
+    color: #608bc0;
+    letter-spacing: 0.4em;
+    font-weight: 600;
+    text-shadow: 2px 0px 4px rgba(0, 0, 0, 0.3);
+    padding-right: 43vw;
+    border-bottom: 9px solid #608bc0;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+    margin-right: 1.5vw;
+}
+
+#flsfbottom {
+    width: 82vw;
+    min-height: 80vh;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 5fr 6fr;
+    padding-top: 1em;
+}
+
+#flsfleft {
+    height: 100%;
+    width: 100%;
+    background-image: url(/assets/logo_kabinet.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#flsfright {
+    height: fit-content;
+}
+
+.flsfcards {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    font-family: "Work Sans", sans-serif;
+    border-radius: 15px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0px 0px 3px 1px rgba(0, 0, 0, 0.2);
+    margin-bottom: 1em;
+}
+
+.cardtop {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    align-items: center;
+    padding: 15px;
+}
+
+.cardtop img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 5px;
+}
+
+.cardtop h3 {
+    font-size: 1.2em;
+    font-weight: 800;
+    color: #285397;
+    margin-left: 0.7em;
+}
+
+.cardbottom {
+    font-size: 0.7em;
+    letter-spacing: -1px;
+    font-weight: 600;
+    color: #58719c;
+    padding: 0px 15px 15px 15px;
+    height: 7.5vw;
 }
