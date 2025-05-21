@@ -1,0 +1,135 @@
+footer {
+    width: 100%;
+    background: radial-gradient(ellipse at top left, #0b3682, #456d9e);
+    padding: 40px 5%;
+    color: #fff;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.footer-left {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.footer-top {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.footer-top img {
+    width: 80px;
+    height: auto;
+    margin-right: 15px;
+}
+
+.footer-top-text h2 {
+    font-size: 1.3rem;
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.footer-top-text p {
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.footer-social {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.footer-social img {
+    width: 24px;
+    height: 24px;
+    margin-right: 15px;
+}
+
+.copyright {
+    font-size: 0.8rem;
+}
+
+.footer-right {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.footer-links {
+    flex: 1;
+    min-width: 150px;
+    margin-bottom: 30px;
+    padding-right: 20px;
+}
+
+.footer-links h3 {
+    font-size: 1rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
+
+.footer-links a {
+    display: block;
+    font-size: 0.85rem;
+    text-decoration: none;
+    color: #fff;
+    margin-bottom: 8px;
+    transition: opacity 0.2s;
+}
+
+.footer-links a:hover {
+    opacity: 0.8;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .footer-left,
+    .footer-right {
+        width: 100%;
+    }
+
+    .footer-top img {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    footer {
+        padding: 30px 5%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: center;
+    }
+
+    .footer-top img {
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+
+    .footer-right {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}

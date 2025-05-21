@@ -1,0 +1,563 @@
+/* Coming Soon Page Styles */
+.coming-soon-page {
+    min-height: 100vh;
+    background-color: #f5f5f5;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Animated Background */
+  .animated-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  /* Gears */
+  .gear {
+    position: absolute;
+    background-image: url("../images/gear-icon.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.1;
+    transition: transform 0.5s ease-out;
+  }
+  
+  .gear-1 {
+    width: 200px;
+    height: 200px;
+    top: 10%;
+    left: 5%;
+    animation: rotate 20s linear infinite;
+  }
+  
+  .gear-2 {
+    width: 150px;
+    height: 150px;
+    top: 60%;
+    right: 10%;
+    animation: rotate-reverse 15s linear infinite;
+  }
+  
+  .gear-3 {
+    width: 100px;
+    height: 100px;
+    bottom: 10%;
+    left: 15%;
+    animation: rotate 10s linear infinite;
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+  @keyframes rotate-reverse {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(-360deg);
+    }
+  }
+  
+  /* Floating Particles */
+  .floating-particle {
+    position: absolute;
+    background-color: #608bc0;
+    border-radius: 50%;
+    opacity: 0.3;
+  }
+  
+  .particle-1 {
+    width: 10px;
+    height: 10px;
+    top: 20%;
+    left: 30%;
+    animation: float 8s ease-in-out infinite;
+  }
+  
+  .particle-2 {
+    width: 15px;
+    height: 15px;
+    top: 40%;
+    right: 25%;
+    animation: float 12s ease-in-out infinite 1s;
+  }
+  
+  .particle-3 {
+    width: 8px;
+    height: 8px;
+    bottom: 30%;
+    left: 40%;
+    animation: float 10s ease-in-out infinite 2s;
+  }
+  
+  .particle-4 {
+    width: 12px;
+    height: 12px;
+    top: 15%;
+    right: 40%;
+    animation: float 9s ease-in-out infinite 3s;
+  }
+  
+  .particle-5 {
+    width: 6px;
+    height: 6px;
+    bottom: 20%;
+    right: 30%;
+    animation: float 11s ease-in-out infinite 4s;
+  }
+  
+  .particle-6 {
+    width: 9px;
+    height: 9px;
+    top: 50%;
+    left: 15%;
+    animation: float 13s ease-in-out infinite 5s;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) translateX(0);
+    }
+    25% {
+      transform: translateY(-20px) translateX(10px);
+    }
+    50% {
+      transform: translateY(0) translateX(20px);
+    }
+    75% {
+      transform: translateY(20px) translateX(10px);
+    }
+    100% {
+      transform: translateY(0) translateX(0);
+    }
+  }
+  
+  /* Circuit Lines */
+  .circuit-line {
+    position: absolute;
+    background-color: #133d87;
+    opacity: 0.1;
+  }
+  
+  .line-1 {
+    width: 2px;
+    height: 30%;
+    top: 0;
+    left: 20%;
+    animation: pulse 4s ease-in-out infinite;
+  }
+  
+  .line-2 {
+    width: 40%;
+    height: 2px;
+    top: 70%;
+    right: 0;
+    animation: pulse 5s ease-in-out infinite 1s;
+  }
+  
+  .line-3 {
+    width: 2px;
+    height: 40%;
+    bottom: 0;
+    right: 30%;
+    animation: pulse 6s ease-in-out infinite 2s;
+  }
+  
+  .circuit-dot {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #133d87;
+    opacity: 0.2;
+  }
+  
+  .dot-1 {
+    top: 30%;
+    left: 20%;
+    animation: blink 3s ease-in-out infinite;
+  }
+  
+  .dot-2 {
+    top: 70%;
+    right: 40%;
+    animation: blink 4s ease-in-out infinite 1s;
+  }
+  
+  .dot-3 {
+    bottom: 40%;
+    right: 30%;
+    animation: blink 5s ease-in-out infinite 2s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+  
+  @keyframes blink {
+    0% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+    50% {
+      transform: scale(1.5);
+      opacity: 0.5;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 0.2;
+    }
+  }
+  
+  /* Coming Soon Content */
+  .coming-soon-content {
+    position: relative;
+    z-index: 1;
+    padding: 4rem 0;
+  }
+  
+  .coming-soon-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    padding: 3rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+  }
+  
+  /* Title Animation */
+  .coming-soon-title {
+    font-size: 4rem;
+    font-weight: 800;
+    color: #133d87;
+    margin-bottom: 2rem;
+    letter-spacing: 0.1em;
+  }
+  
+  .title-letter {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  
+  .title-letter.animate {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .title-letter.space {
+    width: 1rem;
+  }
+  
+  /* Typing Text */
+  .typing-container {
+    height: 3rem;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .typing-text {
+    font-size: 1.25rem;
+    color: #608bc0;
+    margin-right: 0.25rem;
+    font-weight: 500;
+  }
+  
+  .cursor {
+    width: 3px;
+    height: 1.5rem;
+    background-color: #133d87;
+    display: inline-block;
+    animation: blink-cursor 0.7s infinite;
+  }
+  
+  @keyframes blink-cursor {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Progress Bar */
+  .progress-container {
+    margin-bottom: 3rem;
+  }
+  
+  .progress-label {
+    font-size: 1rem;
+    color: #133d87;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+  
+  .progress {
+    height: 1rem;
+    border-radius: 0.5rem;
+    background-color: #e9ecef;
+    overflow: hidden;
+  }
+  
+  .progress-bar {
+    background: linear-gradient(90deg, #133d87, #608bc0);
+    height: 100%;
+    border-radius: 0.5rem;
+    transition: width 1.5s ease;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .progress-bar::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+    animation: progress-shine 2s infinite;
+  }
+  
+  @keyframes progress-shine {
+    0% {
+      left: -100%;
+    }
+    100% {
+      left: 100%;
+    }
+  }
+  
+  /* Countdown */
+  .countdown-container {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-bottom: 3rem;
+  }
+  
+  .countdown-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .countdown-value {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #133d87;
+    background-color: #cbddeb;
+    border-radius: 0.5rem;
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .countdown-value::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .countdown-value::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .countdown-label {
+    font-size: 0.875rem;
+    color: #608bc0;
+    font-weight: 500;
+  }
+  
+  /* Notification Form */
+  .notification-form {
+    margin-bottom: 3rem;
+  }
+  
+  .form-title {
+    font-size: 1.5rem;
+    color: #133d87;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+  }
+  
+  .input-group {
+    display: flex;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .form-control {
+    border-radius: 2rem 0 0 2rem;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #cbddeb;
+    border-right: none;
+    transition: all 0.3s ease;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+    border-color: #608bc0;
+  }
+  
+  .notify-btn {
+    border-radius: 0 2rem 2rem 0;
+    background-color: #133d87;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: 2px solid #133d87;
+    transition: all 0.3s ease;
+  }
+  
+  .notify-btn:hover {
+    background-color: #0f2b5d;
+    border-color: #0f2b5d;
+  }
+  
+  .form-message {
+    margin-top: 1rem;
+    font-size: 0.875rem;
+    display: none;
+  }
+  
+  .form-message.error {
+    color: #dc3545;
+  }
+  
+  .form-message.success {
+    color: #28a745;
+  }
+  
+  /* Social Links */
+  .social-links-container {
+    margin-bottom: 3rem;
+  }
+  
+  .social-links-container p {
+    font-size: 1rem;
+    color: #608bc0;
+    margin-bottom: 1rem;
+  }
+  
+  .social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .social-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #133d87;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    transform: translateY(-5px);
+    color: #608bc0;
+  }
+  
+  .social-icon {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-style: normal;
+  }
+  
+  /* Back Button */
+  .back-link {
+    margin-top: 2rem;
+  }
+  
+  .back-btn {
+    background-color: transparent;
+    color: #133d87;
+    border: 2px solid #133d87;
+    border-radius: 2rem;
+    padding: 0.75rem 1.5rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .back-btn:hover {
+    background-color: #133d87;
+    color: white;
+    transform: translateX(-5px);
+  }
+  
+  .back-icon {
+    font-size: 1.25rem;
+    transition: transform 0.3s ease;
+  }
+  
+  .back-btn:hover .back-icon {
+    transform: translateX(-5px);
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 767.98px) {
+    .coming-soon-title {
+      font-size: 2.5rem;
+    }
+  
+    .coming-soon-container {
+      padding: 2rem 1rem;
+    }
+  
+    .countdown-container {
+      gap: 0.75rem;
+    }
+  
+    .countdown-value {
+      font-size: 1.5rem;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  
+    .social-links {
+      flex-wrap: wrap;
+    }
+  }
+  
