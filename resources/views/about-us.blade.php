@@ -76,7 +76,7 @@
         </section>
 
         <section class="programs-section" data-aos="fade-up">
-            <h2 class="section-title text-center mb-5">Program Kerja</h2>
+            <h2 class="section-title text-center mb-5">DEPARTEMEN</h2>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="200">
                 <a href="{{ url('department/ekonomi-kreatif') }}" class="program-link">
@@ -98,7 +98,7 @@
             </div>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="program-link">
+                <a href="{{ url('department/media-informasi-dan-digitalisasi') }}" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('images/about/medinfo.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
@@ -117,7 +117,7 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="program-link">
+                <a href="{{ url('department/pendidikan') }}" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('images/about/pendidikan.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
@@ -136,7 +136,7 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="program-link">
+                <a href="{{ url('department/pengabdian-masyarakat') }}" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
@@ -155,7 +155,7 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="program-link">
+                <a href="{{ url('department/perhubungan') }}" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
@@ -174,7 +174,7 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="#" class="program-link">
+                <a href="{{ url('department/pengembangan-sumber-daya-masyarakat') }}" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">

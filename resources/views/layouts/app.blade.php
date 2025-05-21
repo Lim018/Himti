@@ -9,7 +9,7 @@
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.bunny.net">
-    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700" rel="stylesheet" />
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     
     <!-- Bootstrap CSS -->
@@ -24,8 +24,10 @@
     <!-- Page-specific CSS -->
     @if(request()->is('about') || request()->is('/'))
         <link href="{{ asset('css/about/style.css') }}" rel="stylesheet">
-    @elseif(request()->is('department/*'))
+    @elseif(request()->is('department/ekonomi-kreatif'))
         <link href="{{ asset('css/depart/style.css') }}" rel="stylesheet">
+    @elseif(request()->is('coming-soon') || request()->is('news') || request()->is('sop/*') || request()->is('features/*') || request()->is('contact') || request()->is('events') || request()->is('gallery') || request()->is('department/*'))
+        <link href="{{ asset('css/coming-soon.css') }}" rel="stylesheet">
     @endif
 </head>
 <body>
@@ -46,5 +48,8 @@
     
     <!-- Custom JS -->
     <script src="{{ asset('js/main.js') }}"></script>
+    
+    <!-- Extra JS -->
+    @yield('extra-js')
 </body>
 </html>
