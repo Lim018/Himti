@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>HIMTI | Company Profile</title>
+    <title>Company Profile | HIMTI</title>
     <link rel="stylesheet" href="css/compro/desktop.css" media="(min-width: 1025px)">
     <link rel="stylesheet" href="css/compro/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
     <link rel="stylesheet" href="css/compro/mobile.css" media="(max-width: 1024px)">

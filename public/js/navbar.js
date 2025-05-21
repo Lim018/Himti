@@ -1,23 +1,27 @@
 document.addEventListener("DOMContentLoaded", function () {
-    const menu = document.getElementById("menu");
+    const featuresToggle = document.querySelector(".features-toggle");
+    const featuresMenu = document.querySelector(".features");
+    const featuresImg = document.querySelector(".features-toggle-img");
+    featuresToggle.addEventListener("click", function () {
+        if (featuresMenu.style.display === "flex") {
+            featuresMenu.style.display = "none";
+            featuresImg.style.transform = "rotate(0deg)";
+        } else {
+            featuresMenu.style.display = "flex";
+            featuresImg.style.transform = "rotate(180deg)";
+        }
+    });
 
-    let screenWidth = window.innerWidth;
-
-    if (screenWidth <= 600) {
-        let nav = document.getElementById("nav");
-        let menuButton = document.createElement("button");
-        menuButton.innerHTML = "<img src='assets/hamburger.svg' alt='menu'/>";
-        menuButton.id = "menu_button";
-        menuButton.onclick = function () {
-            if (nav.style.height === "11vh") {
-                nav.style.height = "7.4lvh";
-                nav.style.maxHeight = "7.4vh";
-            } else {
-                nav.style.height = "11vh";
-                nav.style.maxHeight = "11vh";
-            }
-        };
-        const navDiv = document.getElementById("navdiv");
-        navDiv.appendChild(menuButton);
-    }
+    const SOPToggle = document.querySelector(".sop-toggle");
+    const SOPMenu = document.querySelector(".SOP");
+    const sopImg = document.querySelector(".sop-toggle-img");
+    SOPToggle.addEventListener("click", function () {
+        if (SOPMenu.style.display === "flex") {
+            SOPMenu.style.display = "none";
+            sopImg.style.transform = "rotate(0deg)";
+        } else {
+            SOPMenu.style.display = "flex";
+            sopImg.style.transform = "rotate(180deg)";
+        }
+    });
 });

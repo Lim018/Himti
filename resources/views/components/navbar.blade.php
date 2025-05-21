@@ -1,21 +1,31 @@
-<link rel="stylesheet" href="css/navbar/desktop.css" media="(min-width: 1025px)">
-<link rel="stylesheet" href="css/navbar/tablet.css" media="(min-width: 601px) and (max-width: 1024px)">
-<link rel="stylesheet" href="css/navbar/mobile.css" media="(max-width: 600px)">
+<link rel="stylesheet" href="{{ asset('css/navbar.css') }}">
 
-<nav id="nav">
-    <div id="navdiv">
-        <div>
-            <img src="/assets/logo_himpunan.png" alt="logo_himpunan" id="logo_himpunan_nav">
-            <img src="/assets/logo_kabinet.png" alt="logo_kabinet" id="logo_kabinet_nav">
+<nav>
+    <div class="logo-container">
+        <img src="/assets/logo_himpunan.png" alt="logo_himpunan">
+        <img src="/assets/logo_kabinet.png" alt="logo_kabinet">
+        <div class="brand-text">
             <h3>HIMA<br><b>TEKNIK INFORMATIKA</b></h3>
         </div>
-        
     </div>
-    <div id="menudiv">
-            <a href="" class="menu">News</a>
-            <a href="" class="menu">About Us</a>
-            <a href="" class="menu">Features</a>
+
+    <input type="checkbox" id="mobile-menu-checkbox">
+    <label for="mobile-menu-checkbox" class="hamburger">☰</label>
+
+    <div class="menu-container">
+        <a href="" class="menu border">News</a>
+        <a href="" class="menu border">About Us</a>
+        <p class="menu border sop-toggle">SOP<img class="sop-toggle-img" src="{{ asset('assets/arrow.svg') }}"></p>
+        <p class="menu features-toggle">Features <img class="features-toggle-img" src="{{ asset('assets/arrow.svg') }}"></p>
     </div>
 </nav>
-
+<div class="features sub-menu">
+    <a href="" class="border-bottom">Berkas</a>
+    <a href="" class="border-bottom">Marketplace</a>
+    <a href="">Portal</a>
+</div>
+<div class="SOP sub-menu">
+    <a href="" class="border-bottom">Partnership</a>
+    <a href="">Medinfo</a>
+</div>
 <script src="js/navbar.js"></script>
