@@ -9,3 +9,7 @@ Route::get('/', function () {
 Route::get('/about', function () {
     return view('about-us');
 });
+
+Route::get('/department/ekonomi-kreatif', function () {
+    return view('depart.ekraf');
+});
