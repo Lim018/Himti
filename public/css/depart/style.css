@@ -1,0 +1,173 @@
+/* Department Page Specific Styles */
+.department-header {
+    padding: 3rem 0;
+  }
+  
+  .department-title {
+    color: #133d87;
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .department-year {
+    display: inline-block;
+    background-color: #608bc0;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .department-tagline {
+    font-family: "Caveat", cursive;
+    font-size: 1.5rem;
+    color: #133d87;
+    font-style: italic;
+  }
+  
+  .department-head-section {
+    margin: 4rem 0;
+  }
+  
+  .head-image-container {
+    max-width: 300px;
+  }
+  
+  .head-image {
+    width: 100%;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .head-title {
+    color: #133d87;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .head-name {
+    color: #608bc0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  
+  .sub-department-section {
+    margin: 4rem 0;
+  }
+  
+  .section-title {
+    color: #133d87;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+  }
+  
+  .section-divider {
+    height: 2px;
+    background-color: #cbddeb;
+    margin-bottom: 2rem;
+    width: 100%;
+  }
+  
+  .sub-department-image {
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .program-kerja-section {
+    position: relative;
+    padding: 4rem 0;
+  }
+  
+  .wave-bg {
+    background-color: #608bc0;
+    padding: 4rem 0;
+    position: relative;
+    border-radius: 1rem 1rem 0 0;
+  }
+  
+  .wave-bg::before {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-image: url("../images/wave.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+  }
+  
+  .program-cards {
+    padding: 0 2rem;
+  }
+  
+  .program-card {
+    background-color: white;
+    border-radius: 0.5rem;
+    padding: 1.5rem;
+    height: 100%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .program-card-title {
+    color: #133d87;
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .program-card-text {
+    color: #4a4a4a;
+    font-size: 0.875rem;
+  }
+  
+  /* Responsive Adjustments for Department Page */
+  @media (max-width: 767.98px) {
+    .department-title {
+      font-size: 2.5rem;
+    }
+  
+    .department-tagline {
+      font-size: 1.25rem;
+    }
+  
+    .head-title {
+      font-size: 2rem;
+      text-align: center !important;
+    }
+  
+    .head-name {
+      text-align: center !important;
+      margin-bottom: 1.5rem;
+      font-size: 1.5rem;
+    }
+  
+    .head-image-container {
+      margin-bottom: 1.5rem;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .program-cards .row {
+      row-gap: 1.5rem;
+    }
+  
+    .wave-bg {
+      padding: 3rem 0;
+    }
+  
+    .wave-bg::before {
+      height: 30px;
+    }
+  }
+  
