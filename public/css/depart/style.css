@@ -1,173 +1,424 @@
 /* Department Page Specific Styles */
 .department-header {
+  padding: 3rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.department-title {
+  color: #133d87;
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+  transition: all 0.5s ease;
+}
+
+.department-header:hover .department-title {
+  transform: translateY(-5px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.department-year {
+  display: inline-block;
+  background-color: #608bc0;
+  color: white;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  margin-bottom: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.department-year::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(255, 255, 255, 0.2);
+  transition: all 0.5s ease;
+}
+
+.department-header:hover .department-year::before {
+  left: 100%;
+}
+
+.department-tagline {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+  color: #133d87;
+  font-style: italic;
+  transition: all 0.5s ease;
+  opacity: 0.8;
+}
+
+.department-header:hover .department-tagline {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+.department-head-section {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.head-image-container {
+  max-width: 300px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  transition: all 0.5s ease;
+}
+
+.head-image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(19, 61, 135, 0.3) 0%, rgba(96, 139, 192, 0.3) 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.head-image-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.head-image-container:hover::before {
+  opacity: 1;
+}
+
+.head-image {
+  width: 100%;
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.5s ease;
+}
+
+.head-image-container:hover .head-image {
+  transform: scale(1.05);
+}
+
+.head-title {
+  color: #133d87;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+  position: relative;
+  display: inline-block;
+}
+
+.head-title::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #608bc0;
+  transition: width 0.5s ease;
+}
+
+.department-head-section:hover .head-title::after {
+  width: 100%;
+}
+
+.head-name {
+  color: #608bc0;
+  font-size: 2rem;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.department-head-section:hover .head-name {
+  color: #133d87;
+  transform: translateX(10px);
+}
+
+.sub-department-section {
+  margin: 4rem 0;
+  position: relative;
+}
+
+.section-title {
+  color: #133d87;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  position: relative;
+  display: inline-block;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #608bc0;
+  transition: width 0.5s ease;
+}
+
+.sub-department-section:hover .section-title::after {
+  width: 100%;
+}
+
+.section-divider {
+  height: 2px;
+  background-color: #cbddeb;
+  margin-bottom: 2rem;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.section-divider::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, #608bc0, transparent);
+  transition: all 1s ease;
+}
+
+.sub-department-section:hover .section-divider::before {
+  left: 100%;
+}
+
+.sub-department-image {
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+  position: relative;
+}
+
+.sub-department-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(19, 61, 135, 0.2) 0%, rgba(96, 139, 192, 0.2) 100%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  z-index: 1;
+}
+
+.sub-department-image:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.sub-department-image:hover::before {
+  opacity: 1;
+}
+
+.sub-department-image img {
+  transition: transform 0.5s ease;
+}
+
+.sub-department-image:hover img {
+  transform: scale(1.05);
+}
+
+.program-kerja-section {
+  position: relative;
+  padding: 4rem 0;
+}
+
+.wave-bg {
+  background-color: #608bc0;
+  padding: 4rem 0;
+  position: relative;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+}
+
+.wave-bg::before {
+  content: "";
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background-image: url("../images/wave.png");
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.wave-bg::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.wave-bg:hover::after {
+  opacity: 1;
+}
+
+.program-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.program-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  transition: width 0.5s ease;
+}
+
+.program-kerja-section:hover .program-title {
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+.program-kerja-section:hover .program-title::after {
+  width: 100px;
+}
+
+.program-cards {
+  padding: 0 2rem;
+}
+
+.program-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  height: 100%;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(19, 61, 135, 0.05) 0%, rgba(96, 139, 192, 0.05) 100%);
+  transition: top 0.5s ease;
+  z-index: -1;
+}
+
+.program-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+
+.program-card:hover::before {
+  top: 0;
+}
+
+.program-card-title {
+  color: #133d87;
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  position: relative;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.program-card-title::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #608bc0;
+  transition: width 0.3s ease;
+}
+
+.program-card:hover .program-card-title {
+  transform: translateY(-3px);
+}
+
+.program-card:hover .program-card-title::after {
+  width: 100%;
+}
+
+.program-card-text {
+  color: #4a4a4a;
+  font-size: 0.875rem;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .program-card-text {
+  color: #133d87;
+}
+
+/* Responsive Adjustments for Department Page */
+@media (max-width: 767.98px) {
+  .department-title {
+    font-size: 2.5rem;
+  }
+
+  .department-tagline {
+    font-size: 1.25rem;
+  }
+
+  .head-title {
+    font-size: 2rem;
+    text-align: center !important;
+  }
+
+  .head-name {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+  }
+
+  .head-image-container {
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .program-cards .row {
+    row-gap: 1.5rem;
+  }
+
+  .wave-bg {
     padding: 3rem 0;
   }
-  
-  .department-title {
-    color: #133d87;
-    font-size: 3.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .department-year {
-    display: inline-block;
-    background-color: #608bc0;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    padding: 0.5rem 1rem;
-    margin-bottom: 1.5rem;
-  }
-  
-  .department-tagline {
-    font-family: "Caveat", cursive;
-    font-size: 1.5rem;
-    color: #133d87;
-    font-style: italic;
-  }
-  
-  .department-head-section {
-    margin: 4rem 0;
-  }
-  
-  .head-image-container {
-    max-width: 300px;
-  }
-  
-  .head-image {
-    width: 100%;
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .head-title {
-    color: #133d87;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.5rem;
-  }
-  
-  .head-name {
-    color: #608bc0;
-    font-size: 2rem;
-    font-weight: 500;
-  }
-  
-  .sub-department-section {
-    margin: 4rem 0;
-  }
-  
-  .section-title {
-    color: #133d87;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  
-  .section-divider {
-    height: 2px;
-    background-color: #cbddeb;
-    margin-bottom: 2rem;
-    width: 100%;
-  }
-  
-  .sub-department-image {
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .program-kerja-section {
-    position: relative;
-    padding: 4rem 0;
-  }
-  
-  .wave-bg {
-    background-color: #608bc0;
-    padding: 4rem 0;
-    position: relative;
-    border-radius: 1rem 1rem 0 0;
-  }
-  
+
   .wave-bg::before {
-    content: "";
-    position: absolute;
-    bottom: -2px;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    background-image: url("../images/wave.png");
-    background-size: 100% 100%;
-    background-repeat: no-repeat;
+    height: 30px;
   }
-  
-  .program-cards {
-    padding: 0 2rem;
-  }
-  
-  .program-card {
-    background-color: white;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    height: 100%;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease;
-  }
-  
-  .program-card:hover {
-    transform: translateY(-5px);
-  }
-  
-  .program-card-title {
-    color: #133d87;
-    font-size: 1.25rem;
-    font-weight: 700;
-    margin-bottom: 1rem;
-  }
-  
-  .program-card-text {
-    color: #4a4a4a;
-    font-size: 0.875rem;
-  }
-  
-  /* Responsive Adjustments for Department Page */
-  @media (max-width: 767.98px) {
-    .department-title {
-      font-size: 2.5rem;
-    }
-  
-    .department-tagline {
-      font-size: 1.25rem;
-    }
-  
-    .head-title {
-      font-size: 2rem;
-      text-align: center !important;
-    }
-  
-    .head-name {
-      text-align: center !important;
-      margin-bottom: 1.5rem;
-      font-size: 1.5rem;
-    }
-  
-    .head-image-container {
-      margin-bottom: 1.5rem;
-      margin-left: auto;
-      margin-right: auto;
-    }
-  
-    .program-cards .row {
-      row-gap: 1.5rem;
-    }
-  
-    .wave-bg {
-      padding: 3rem 0;
-    }
-  
-    .wave-bg::before {
-      height: 30px;
-    }
-  }
-  
+}

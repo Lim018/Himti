@@ -1,191 +1,359 @@
 /* Hero Section */
 .hero-section {
-    margin-bottom: 4rem;
-  }
-  
-  .himti-subtitle {
-    color: #608bc0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  
+  margin-bottom: 4rem;
+}
+
+.himti-subtitle {
+  color: #608bc0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.hero-section:hover .himti-subtitle {
+  transform: translateY(-5px);
+}
+
+.struktur-title {
+  color: #133d87;
+  font-size: 4.5rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s ease;
+}
+
+.hero-section:hover .struktur-title {
+  letter-spacing: 0.1em;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.15);
+}
+
+.team-photo {
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: transform 0.5s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.team-photo:hover {
+  transform: scale(1.02);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Profile Sections */
+.kahima-section,
+.wakahima-section {
+  margin-bottom: 4rem;
+  transition: transform 0.3s ease;
+}
+
+.position-title {
+  color: #133d87;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.25rem;
+  position: relative;
+  display: inline-block;
+}
+
+.position-title::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: #608bc0;
+  transition: width 0.3s ease;
+}
+
+.kahima-section:hover .position-title::after,
+.wakahima-section:hover .position-title::after {
+  width: 100%;
+}
+
+.person-name {
+  color: #608bc0;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.kahima-section:hover .person-name,
+.wakahima-section:hover .person-name {
+  color: #133d87;
+}
+
+.profile-image {
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  transition: all 0.5s ease;
+}
+
+.profile-image:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.profile-card {
+  background-color: #cbddeb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  color: #4a4a4a;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.profile-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(96, 139, 192, 0.2) 0%, rgba(19, 61, 135, 0.2) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.profile-card:hover::before {
+  opacity: 1;
+}
+
+.profile-card p {
+  margin-bottom: 1rem;
+}
+
+.profile-card .quote {
+  text-align: right;
+  font-style: italic;
+  font-size: 0.875rem;
+  margin-top: 1rem;
+  margin-bottom: 0;
+  position: relative;
+  padding-right: 20px;
+  transition: transform 0.3s ease;
+}
+
+.profile-card .quote::after {
+  content: '"';
+  position: absolute;
+  right: 0;
+  top: 0;
+  font-size: 1.5rem;
+  color: #608bc0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.profile-card:hover .quote {
+  transform: translateX(-10px);
+}
+
+.profile-card:hover .quote::after {
+  opacity: 1;
+}
+
+/* Program Sections */
+.section-title {
+  color: #133d87;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.section-title::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 3px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #608bc0;
+  transition: width 0.3s ease;
+}
+
+.section-title:hover::after {
+  width: 100px;
+}
+
+.programs-section {
+  margin-bottom: 4rem;
+}
+
+.program-card {
+  background-color: #cbddeb;
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  position: relative;
+  z-index: 1;
+}
+
+.program-card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, rgba(19, 61, 135, 0.8) 0%, rgba(96, 139, 192, 0.8) 100%);
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.program-card:hover::before {
+  opacity: 1;
+}
+
+.program-link {
+  display: block;
+  color: inherit;
+  text-decoration: none;
+}
+
+.program-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  transition: transform 0.5s ease;
+}
+
+.program-card:hover .program-image {
+  transform: scale(1.1);
+}
+
+.program-content {
+  padding: 2rem;
+  flex-grow: 1;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .program-content {
+  padding-left: 2.5rem;
+}
+
+.program-year {
+  color: #f4f3df;
+  font-size: 1.25rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover .program-year {
+  transform: translateY(-5px);
+  color: white;
+}
+
+.program-title {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0;
+  line-height: 1.2;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .program-title {
+  transform: translateY(-5px);
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.program-arrow {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover .program-arrow {
+  transform: translateX(10px);
+}
+
+.arrow-icon {
+  color: white;
+  font-size: 3rem;
+  font-weight: 300;
+  font-style: normal;
+  transition: all 0.3s ease;
+}
+
+.program-card:hover .arrow-icon {
+  font-size: 3.5rem;
+}
+
+/* Responsive Adjustments for About Page */
+@media (max-width: 767.98px) {
   .struktur-title {
-    color: #133d87;
-    font-size: 4.5rem;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .team-photo {
-    margin-top: 2rem;
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  
-  /* Profile Sections */
-  .kahima-section,
-  .wakahima-section {
-    margin-bottom: 4rem;
-  }
-  
-  .position-title {
-    color: #133d87;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0.25rem;
-  }
-  
-  .person-name {
-    color: #608bc0;
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 1rem;
-  }
-  
-  .profile-image {
-    border-radius: 0.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    max-width: 100%;
-  }
-  
-  .profile-card {
-    background-color: #cbddeb;
-    border-radius: 0.5rem;
-    padding: 1.5rem;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    color: #4a4a4a;
-  }
-  
-  .profile-card p {
-    margin-bottom: 1rem;
-  }
-  
-  .profile-card .quote {
-    text-align: right;
-    font-style: italic;
-    font-size: 0.875rem;
-    margin-top: 1rem;
-    margin-bottom: 0;
-  }
-  
-  /* Program Sections */
-  .section-title {
-    color: #133d87;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 2rem;
-  }
-  
-  .programs-section {
-    margin-bottom: 4rem;
-  }
-  
-  .program-card {
-    background-color: #cbddeb;
-    border-radius: 1rem;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .program-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
-  }
-  
-  .program-link {
-    display: block;
-    color: inherit;
-    text-decoration: none;
-  }
-  
-  .program-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-  }
-  
-  .program-content {
-    padding: 2rem;
-    flex-grow: 1;
-  }
-  
-  .program-year {
-    color: #f4f3df;
-    font-size: 1.25rem;
-    font-weight: 500;
-    margin-bottom: 0.5rem;
-  }
-  
-  .program-title {
-    color: white;
-    font-size: 2.5rem;
-    font-weight: 700;
-    margin-bottom: 0;
-    line-height: 1.2;
-  }
-  
-  .program-arrow {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-right: 2rem;
-  }
-  
-  .arrow-icon {
-    color: white;
     font-size: 3rem;
-    font-weight: 300;
-    font-style: normal;
   }
-  
-  /* Responsive Adjustments for About Page */
-  @media (max-width: 767.98px) {
-    .struktur-title {
-      font-size: 3rem;
-    }
-  
-    .position-title {
-      font-size: 2rem;
-      text-align: center !important;
-    }
-  
-    .person-name {
-      text-align: center !important;
-      margin-bottom: 1.5rem;
-    }
-  
-    .profile-image {
-      margin-bottom: 1.5rem;
-    }
-  
-    .wakahima-section .profile-image {
-      margin-top: 1.5rem;
-      margin-bottom: 0;
-    }
-  
-    .wakahima-section .row {
-      flex-direction: column-reverse;
-    }
-  
-    .program-content {
-      padding: 1.5rem;
-    }
-  
-    .program-year {
-      font-size: 1rem;
-    }
-  
-    .program-title {
-      font-size: 1.75rem;
-    }
-  
-    .arrow-icon {
-      font-size: 2rem;
-    }
+
+  .position-title {
+    font-size: 2rem;
+    text-align: center !important;
   }
-  
+
+  .person-name {
+    text-align: center !important;
+    margin-bottom: 1.5rem;
+  }
+
+  .profile-image {
+    margin-bottom: 1.5rem;
+  }
+
+  .wakahima-section .profile-image {
+    margin-top: 1.5rem;
+    margin-bottom: 0;
+  }
+
+  .wakahima-section .row {
+    flex-direction: column-reverse;
+  }
+
+  .program-content {
+    padding: 1.5rem;
+  }
+
+  .program-year {
+    font-size: 1rem;
+  }
+
+  .program-title {
+    font-size: 1.75rem;
+  }
+
+  .arrow-icon {
+    font-size: 2rem;
+  }
+}
