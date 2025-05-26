@@ -6,6 +6,10 @@ Route::get('/', function () {
     return view('news.index');
 });
 
+Route::get('/comprof', function () {
+    return view('compro');
+});
+
 Route::get('/about', function () {
     return view('about-us');
 });
@@ -15,7 +19,7 @@ Route::get('/department/ekonomi-kreatif', function () {
 });
 
 Route::get('/news', function () {
-    return view('coming-soon');
+    return view('news.index');
 });
 
 Route::get('/sop/{any?}', function () {
