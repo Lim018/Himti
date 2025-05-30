@@ -1,0 +1,245 @@
+.hero {
+    width: 100%;
+    aspect-ratio: 1924 / 842;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    min-height: 300px; /* Minimum height for small screens */
+}
+
+.hero .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #498ec3;
+    opacity: 0.5;
+}
+
+/* Content section */
+.content {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 5rem;
+    background: linear-gradient(
+        152deg,
+        rgba(19, 61, 135, 1) 0%,
+        rgba(96, 139, 192, 1) 100%
+    );
+}
+
+.info {
+    width: 90%;
+    max-width: 1200px;
+    background-color: #fff;
+    padding: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: -5%;
+    z-index: 1;
+}
+
+.info h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: #133d87;
+    max-width: 40%;
+    margin: 0 auto 1rem auto;
+}
+
+.date {
+    text-align: center;
+    color: #498ec3;
+    font-size: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.body p {
+    line-height: 1.6;
+}
+
+/* Additional section */
+.additional {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    height: fit-content;
+    align-items: center;
+}
+
+.additional h2 {
+    color: #fff;
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.other-info {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+}
+
+.info-card {
+    width: 300px;
+    height: fit-content;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.info-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.info-card .top {
+    width: 100%;
+    height: 180px;
+    background-size: cover;
+    background-position: center;
+}
+
+.info-card .bottom {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 120px;
+    background: #fff;
+}
+
+.bottom h3 {
+    color: #133d87;
+    margin-bottom: 0.5rem;
+}
+
+.bottom p {
+    color: #333;
+    font-size: 0.9rem;
+    text-align: left;
+    margin-bottom: 0.5rem;
+}
+
+.bottom .date {
+    font-size: 0.8rem;
+    text-align: left;
+    margin-top: auto;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 1200px) {
+    .info {
+        width: 95%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .hero {
+        aspect-ratio: 16 / 9; /* Adjusted aspect ratio for medium screens */
+    }
+
+    .info h1 {
+        max-width: 90%;
+        font-size: 1.8rem;
+    }
+
+    .other-info {
+        gap: 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .hero {
+        aspect-ratio: 3 / 2; /* Adjusted aspect ratio for smaller screens */
+    }
+
+    .info {
+        width: 90%;
+        padding: 1.5rem;
+        margin-top: -10%;
+    }
+
+    .info h1 {
+        font-size: 1.5rem;
+        max-width: 100%;
+    }
+
+    .additional h2 {
+        font-size: 1.5rem;
+    }
+
+    .info-card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .hero {
+        aspect-ratio: 1 / 1; /* Square aspect ratio for mobile */
+        min-height: 250px;
+    }
+
+    .info {
+        width: 95%;
+        padding: 1.25rem;
+        margin-top: -15%;
+    }
+
+    .info h1 {
+        font-size: 1.3rem;
+    }
+
+    .date {
+        font-size: 0.9rem;
+        margin-bottom: 1rem;
+    }
+
+    .additional {
+        padding: 1.5rem 0.75rem;
+    }
+
+    .additional h2 {
+        font-size: 1.3rem;
+        margin-bottom: 1rem;
+    }
+
+    .other-info {
+        gap: 1rem;
+    }
+
+    .info-card .top {
+        height: 150px;
+    }
+
+    .info-card .bottom {
+        min-height: 100px;
+        padding: 0.75rem;
+    }
+
+    .bottom h3 {
+        font-size: 1rem;
+    }
+
+    .bottom p {
+        font-size: 0.8rem;
+    }
+}

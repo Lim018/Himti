@@ -1,0 +1,296 @@
+.hero-section {
+    background: url("../../images/portal/hero_bg.svg");
+    background-size: cover;
+    height: fit-content;
+    padding: 8rem 2rem 2rem 2rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-section::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+.hero-section .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+    align-items: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-section .portal-content {
+    color: white;
+}
+
+.hero-section .portal-content h1 {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    line-height: 1.2;
+}
+
+.hero-section .portal-content p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 2.5rem;
+    opacity: 0.9;
+    max-width: 500px;
+}
+
+.hero-section .admin-button {
+    background: #fff;
+    color: #2c569a;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: fit-content;
+}
+
+.hero-section .update-section {
+    color: white;
+}
+
+.hero-section .update-section h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.hero-section .update-content {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 3rem;
+    margin-bottom: 2rem;
+    min-height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.hero-section .update-placeholder {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.update-item {
+    cursor: pointer;
+}
+
+.update-item p {
+    margin-top: 10px;
+}
+
+.hero-section .pagination-dots {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.hero-section .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.hero-section .dot.active {
+    background: white;
+    transform: scale(1.2);
+}
+
+.hero-section .dot:hover {
+    background: rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        padding: 1.5rem;
+        min-height: auto;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    .hero-section .container {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .hero-section .portal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .portal-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-section .update-section h2 {
+        font-size: 2rem;
+    }
+
+    .hero-section .update-content {
+        padding: 2rem;
+        min-height: 200px;
+    }
+
+    .hero-section .portal-content p {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-section {
+        padding: 6rem 2rem 2rem 2rem;
+    }
+
+    .hero-section .portal-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .portal-content h1 {
+        font-size: 2rem;
+    }
+
+    .hero-section .update-section h2 {
+        font-size: 1.75rem;
+    }
+
+    .hero-section .update-content {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+
+    .hero-section .admin-button {
+        padding: 0.6rem 1.5rem;
+        font-size: 0.9rem;
+    }
+}
+
+.content-section {
+    background-color: #ffffff;
+    padding-top: 30px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-section h2 {
+    font-size: clamp(1.5rem, 2.5vw, 3rem);
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #2c569a;
+}
+
+.info-container {
+    display: grid;
+    gap: 20px;
+    max-width: 1020px;
+    width: fit-content;
+    grid-template-columns: 1fr 1fr 1fr;
+    height: fit-content;
+    gap: 30px;
+}
+
+@media (max-width: 980px) and (min-width: 651px) {
+    .info-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .info-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+.info-cards {
+    min-width: 300px;
+    width: 300px;
+    height: fit-content;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    flex-shrink: 0;
+    border: 1px solid #e0e0e0;
+    cursor: pointer;
+}
+
+.info-cards .top {
+    height: 160px;
+    background-color: #d9d9d9;
+}
+
+.info-cards .bottom {
+    height: 140px;
+    background-color: white;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.news-content h3 {
+    font-size: clamp(1.1em, 2vw, 1.5em);
+}
+
+.news-content p {
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    color: #686868;
+}
+
+.logo-corner {
+    width: 100%;
+    aspect-ratio: 1920 / 587;
+    background-image: url("../../images/portal/logo_corner_halftone.svg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+    background-size: contain;
+}
+
+.no-info {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #686868;
+    margin-top: 20px;
+    width: 100%;
+}
+
+.show-more-btn {
+    background-color: #2c569a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    margin-top: 30px;
+}
