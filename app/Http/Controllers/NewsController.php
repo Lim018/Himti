@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\News; // Import model News
 use Illuminate\Http\Request; // Import Request untuk menangani input
 use Illuminate\Support\Facades\Validator; // Import Validator untuk validasi manual
+use \Carbon\Carbon;
 
 class NewsController extends Controller
 {
@@ -15,10 +16,21 @@ class NewsController extends Controller
      */
     public function index()
     {
-        // Mengambil semua berita dari database, diurutkan berdasarkan tanggal terbaru
-        // Dengan eager loading 'department' untuk menghindari N+1 query problem
-        // Menggunakan paginate() untuk API pagination yang baik
-        $news = News::all(); // 10 berita per halaman
+        
+        $news = News::all()->map(function ($item) {
+            $data = Carbon::parse($item->date);
+            $item->date = [
+                'month' => (int) $data->format('m'),
+                'date' => (int) $data->format('d'),
+                'year' => (int) $data->format('Y'),
+            ];
+            $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
+            unset($item->department);
+            unset($item->department_id);
+            unset($item->created_at);
+            unset($item->updated_at);
+            return $item;
+        });
 
         // Mengembalikan data dalam format JSON
         return response()->json($news);
