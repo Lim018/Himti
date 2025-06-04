@@ -1,4 +1,7 @@
    @php
+      // Contoh data yang dikirim ke view.
+      // $info untuk informasi yang ditampilkan di bagian utama.
+      // $infoList untuk daftar informasi lainnya (3 info terakhir) yang ditampilkan di bagian bawah.
       $info = [
          'id' => 1,
          'image' => asset('images/compro/compro_img2.jpg'),
@@ -62,7 +65,7 @@
          <h2 data-aos="zoom-in-down" data-aos-duration="1000">INFORMASI LAINNYA</h2>
          <div class="other-info">
             @foreach ($infoList as $item)
-               <div class="info-card" onclick="window.location.href='{{ url('/portal/' . $item['id']) }}'" data-aos="fade-up" data-aos-duration="1000">
+               <div class="info-card" onclick="window.location.href='{{ url('/portal/detail/' . $item['id']) }}'" data-aos="fade-up" data-aos-duration="1000">
                   <div class="top" style="background-image: url('{{ $item['image'] }}')"></div>
                   <div class="bottom">
                      <h3>{{ $item['title'] }}</h3>

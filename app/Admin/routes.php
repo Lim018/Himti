@@ -1,5 +1,7 @@
 <?php
 
+use App\Admin\Controllers\DepartmentController;
+use App\Admin\Controllers\NewsController;
 use Illuminate\Routing\Router;
 use App\Admin\Controllers\UserController;
 
@@ -14,4 +16,6 @@ Route::group([
 
     $router->get('/', 'HomeController@index')->name('home');
     $router->resource('users', UserController::class);
+    $router->resource('news', NewsController::class);
+    $router->resource('departments', DepartmentController::class);
 });
