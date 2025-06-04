@@ -7,6 +7,7 @@
     @include('components.navbar')
     
     <!-- Hero Section -->
+    <br><br><br>
     <section class="hero-section">
         <div class="container">
             <div class="row align-items-center">
@@ -14,13 +15,14 @@
                     <div class="hero-content" data-aos="fade-right">
                         <h1 class="department-title">EKONOMI KREATIF</h1>
                         <div class="department-badge">HIMTI 2025</div>
-                        <p class="department-tagline">kata kata si divisi</p>
+                        <p class="department-tagline">Departemen Ekonomi Kreatif!
+Sebagai motor penggerak inovasi dan kemandirian finansial, Ekraf berfokus pada pengembangan kreativitas dan kewirausahaan di HIMTI.</p>
                     </div>
                 </div>
                 <div class="col-lg-6">
                     <div class="hero-logo" data-aos="fade-left">
                         <div class="logo-circle">
-                            <img src="/images/depart/selaras3d.png?height=300&width=300" alt="HIMTI Logo" />
+                            <img src="/images/depart/selaras3d.png" alt="HIMTI Logo" />
                         </div>
                     </div>
                 </div>
@@ -86,7 +88,7 @@
             <div class="title-underline"></div>
             
             <div class="sub-dept-image" data-aos="zoom-in">
-                <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/Untitled.png-PnxITcauvanZ4MJ1TypW9j8xOZL6LE.jpeg" alt="Sub Departemen Team" class="img-fluid" />
+                <img src="/images/depart/sub-ekraf.png" alt="Sub Departemen Team" class="img-fluid" />
             </div>
         </div>
     </section>
@@ -229,8 +231,8 @@
 }
 
 .logo-circle {
-    width: 300px;
-    height: 300px;
+    width: 600px;
+    height: 600px;
     border-radius: 50%;
     background-color: #f0f0f0;
     display: flex;
