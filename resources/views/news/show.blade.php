@@ -1,4 +1,4 @@
-@php
+{{-- @php
 $news = [
     'title' => 'Lorem ipsum dolor sit amet consectetur adipisicing.',
     'author' => 'Medinfo',
@@ -45,7 +45,7 @@ $newsList = [
         'body' => '<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat repellat molestias quas alias corrupti odio maiores neque, possimus accusamus doloribus! Sunt obcaecati id ipsa quam voluptatibus a, illum at ex, repudiandae tempore molestias explicabo vero ut deserunt. Delectus, nam fugiat. Dolorem optio autem minima a, voluptatem recusandae doloremque? Dolor aliquam eaque minus doloremque voluptate exercitationem nemo impedit maiores deleniti facilis asperiores laborum suscipit totam architecto illum dignissimos saepe dolorem dolore, veniam optio non ad? Nostrum exercitationem tenetur quae ducimus sint sapiente labore, eius mollitia dolore facilis expedita repellat illo ad voluptatem. Earum aspernatur dolor temporibus quam, unde nihil. Vel, aliquam.</p>'
     ],
 ];
-@endphp
+@endphp --}}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -63,7 +63,7 @@ $newsList = [
       <div class="hero-content">
         <h1>{{ $news['title'] }}</h1>
         <div class="article-meta">
-          <p class="author">{{ $news['author'] }}<br>{{ $news['date'] }}</p>
+          <p class="author">{{ $news['department_name'] }}<br>{{ $news['date'] }}</p>
         </div>
       </div>
     </section>
@@ -85,7 +85,7 @@ $newsList = [
                     <div class="card-image"></div>
                     <h3 class="card-title">{{ $news['title'] }}</h3>
                     <div class="meta">
-                      <p>{{ $news['author'] }}</p>
+                      <p>{{ $news['department_name'] }}</p>
                       <p>{{ $news['date'] }}</p>
                     </div>
                 </div>

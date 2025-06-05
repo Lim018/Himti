@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -20,6 +21,20 @@ Route::get('/department/ekonomi-kreatif', function () {
 
 Route::get('/news', function () {
     return view('news.index');
+});
+
+Route::get('/news.show', function () {
+    $news = NewsController::getLatestNews()[0];
+    $newsList = array_slice(NewsController::getLatestNews(4), 1, 3);
+    return view('news.show', compact('news', 'newsList'));
+});
+
+Route::get('/portal', function () {
+    return view('portal.index');
+});
+
+Route::get('/portal.show', function () {
+    return view('portal.show');
 });
 
 Route::get('/sop/{any?}', function () {
