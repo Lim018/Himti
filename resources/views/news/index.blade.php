@@ -1,30 +1,30 @@
 @php
-   $newsList = [
-      [
-         'title' => 'Lorem Ipsum Dolor Sit Amet',
-         'author' => 'Medinfo',
-         'date' => '1 Januari 2025',
-         'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae.</p>',
-         'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
-         'image' => asset('images/news/lorem1.jpg'),
-      ],
-      [
-         'title' => 'Consectetur Adipiscing Elit',
-         'author' => 'Eksekutif',
-         'date' => '2 Januari 2025',
-         'body' => '<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>',
-         'desc' => 'Consectetur adipiscing elit, sed do eiusmod tempor.',
-         'image' => asset('images/news/lorem2.jpg'),
-      ],
-      [
-         'title' => 'Sed Do Eiusmod Tempor',
-         'author' => 'Pendidikan',
-         'date' => '3 Januari 2025',
-         'body' => '<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>',
-         'desc' => 'Sed do eiusmod tempor incididunt ut labore.',
-         'image' => asset('images/news/lorem3.jpg'),
-      ],
-   ];
+   // $newsList = [
+   //    [
+   //       'title' => 'Lorem Ipsum Dolor Sit Amet',
+   //       'author' => 'Medinfo',
+   //       'date' => '1 Januari 2025',
+   //       'body' => '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam vitae.</p>',
+   //       'desc' => 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+   //       'image' => asset('images/news/lorem1.jpg'),
+   //    ],
+   //    [
+   //       'title' => 'Consectetur Adipiscing Elit',
+   //       'author' => 'Eksekutif',
+   //       'date' => '2 Januari 2025',
+   //       'body' => '<p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>',
+   //       'desc' => 'Consectetur adipiscing elit, sed do eiusmod tempor.',
+   //       'image' => asset('images/news/lorem2.jpg'),
+   //    ],
+   //    [
+   //       'title' => 'Sed Do Eiusmod Tempor',
+   //       'author' => 'Pendidikan',
+   //       'date' => '3 Januari 2025',
+   //       'body' => '<p>Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>',
+   //       'desc' => 'Sed do eiusmod tempor incididunt ut labore.',
+   //       'image' => asset('images/news/lorem3.jpg'),
+   //    ],
+   // ];
    $latest = [
       'title' => 'Ut Enim Ad Minim Veniam',
       'author' => 'Perhubungan',
@@ -68,13 +68,19 @@
         </div>
         <div class="news-container">
             <div class="news-scroll">
+               @php
+                  $newsPack = json_decode($newsList);
+                  // dd($newsPack);
+               @endphp
+               
                @forelse ($newsList as $news)
                   <div class="news-card">
-                     <div class="news-image" style="background-image: url('{{ $news['image'] }}');"></div>
+                     <div class="news-image" style="background-image: url('{{ $news->image ?? '' }}');"></div>
                      <div class="news-content">
-                        <h3>{{ $news['title'] }}</h3>
-                        <p class="news-desc">{{ \Illuminate\Support\Str::limit($news['desc'], 40, '...') }}</p>
-                        <p>{{ $news['author'] }}<br>{{ $news['date'] }}</p>
+                        <h3>{{ $news->title }}</h3>
+                        <p class="news-desc">{{ \Illuminate\Support\Str::limit($news->desc, 40, '...') }}</p>
+                        <p>{{ $news->department_name }}
+                              <br>{{ \Carbon\Carbon::create($news->date['year'], $news->date['month'], $news->date['date'])->translatedFormat('j F Y') }}</p>
                      </div>
                   </div>
                @empty
@@ -83,7 +89,7 @@
             </div>
         </div>
     </section>
-       <section class="depart-news-section">
+       {{-- <section class="depart-news-section">
         <div class="header">
             <h2>DEPART NEWS</h2>
         </div>
@@ -104,7 +110,7 @@
             </div>
         </div>
     </section>
-       <section class="depart-news-section">
+    <section class="depart-news-section">
         <div class="header">
             <h2>DEPART NEWS</h2>
         </div>
@@ -124,7 +130,7 @@
                @endforelse
             </div>
         </div>
-    </section>
+    </section> --}}
     @include('components.footer')
 </body>
 </html>

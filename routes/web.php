@@ -1,9 +1,11 @@
 <?php
 
+use App\Http\Controllers\NewsController;
+use App\Models\News;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('compro');
+    return view('news.index');
 });
 
 Route::get('/comprof', function () {
@@ -19,7 +21,8 @@ Route::get('/department/ekonomi-kreatif', function () {
 });
 
 Route::get('/news', function () {
-    return view('news.index');
+    $newsList = NewsController::index();
+    return view('news.index', compact('newsList'));
 });
 
 Route::get('/sop/{any?}', function () {

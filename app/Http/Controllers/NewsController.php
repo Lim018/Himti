@@ -14,7 +14,7 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public static function index()
     {
         
         $news = News::all()->map(function ($item) {
@@ -33,7 +33,14 @@ class NewsController extends Controller
         });
 
         // Mengembalikan data dalam format JSON
-        return response()->json($news);
+        return $news;
+        // return "ehebwehcbewicb";
+
+        // {
+        //     $news = News::with('department')->get();
+        //     // Manipulate $news as needed
+        //     return $news;
+        // }
     }
 
     /**

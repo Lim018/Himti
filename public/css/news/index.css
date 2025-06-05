@@ -223,12 +223,13 @@
 }
 
 .news-content {
-    height: 140px;
+    height: 100%;
     background-color: white;
     padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .news-content h3 {
