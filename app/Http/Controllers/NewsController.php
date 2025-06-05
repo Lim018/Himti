@@ -14,7 +14,7 @@ class NewsController extends Controller
      *
      * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public static function index()
     {
         
         $news = News::all()->map(function ($item) {
@@ -34,6 +34,23 @@ class NewsController extends Controller
 
         // Mengembalikan data dalam format JSON
         return response()->json($news);
+    }
+
+    public static function getLatestNews($number = 1) {
+        $news = News::orderBy('date', 'desc')
+            ->take($number)
+            ->get()
+            ->map(function ($item) {
+                $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
+                $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
+                unset($item->department);
+                unset($item->department_id);
+                unset($item->created_at);
+                unset($item->updated_at);
+                return $item;
+            })
+            ->toArray();
+        return $news;
     }
 
     /**
