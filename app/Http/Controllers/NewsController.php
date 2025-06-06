@@ -33,7 +33,14 @@ class NewsController extends Controller
         });
 
         // Mengembalikan data dalam format JSON
-        return response()->json($news);
+        return $news->toArray();
+        // return "ehebwehcbewicb";
+
+        // {
+        //     $news = News::with('department')->get();
+        //     // Manipulate $news as needed
+        //     return $news;
+        // }
     }
 
     public static function getLatestNews($number = 1) {

@@ -4,7 +4,19 @@ use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('compro');
+    return view('news.index');
+});
+
+Route::get('/news', function () {
+    $newsList = NewsController::index();
+    return view('news.index', compact('newsList'));
+});
+
+
+Route::get('/news.show', function () {
+    $news = NewsController::getLatestNews()[0];
+    $newsList = array_slice(NewsController::getLatestNews(4), 1, 3);
+    return view('news.show', compact('news', 'newsList'));
 });
 
 Route::get('/comprof', function () {
@@ -17,16 +29,6 @@ Route::get('/about', function () {
 
 Route::get('/department/ekonomi-kreatif', function () {
     return view('depart.ekraf');
-});
-
-Route::get('/news', function () {
-    return view('news.index');
-});
-
-Route::get('/news.show', function () {
-    $news = NewsController::getLatestNews()[0];
-    $newsList = array_slice(NewsController::getLatestNews(4), 1, 3);
-    return view('news.show', compact('news', 'newsList'));
 });
 
 Route::get('/portal', function () {
