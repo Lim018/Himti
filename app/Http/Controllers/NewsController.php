@@ -11,19 +11,13 @@ class NewsController extends Controller
 {
     /**
      * Menampilkan daftar semua berita.
-     *
-     * @return \Illuminate\Http\JsonResponse
      */
     public static function index()
     {
         
         $news = News::all()->map(function ($item) {
             $data = Carbon::parse($item->date);
-            $item->date = [
-                'month' => (int) $data->format('m'),
-                'date' => (int) $data->format('d'),
-                'year' => (int) $data->format('Y'),
-            ];
+            $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
             $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
             unset($item->department);
             unset($item->department_id);
@@ -31,9 +25,8 @@ class NewsController extends Controller
             unset($item->updated_at);
             return $item;
         });
-
         // Mengembalikan data dalam format JSON
-        return $news->toArray();
+        return $news;
         // return "ehebwehcbewicb";
 
         // {
