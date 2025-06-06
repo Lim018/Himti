@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\NewsController;
 use Illuminate\Support\Facades\Route;
+use \App\Http\Controllers\InfoController;
 
 Route::get('/', function () {
     return view('news.index');
@@ -32,11 +33,14 @@ Route::get('/department/ekonomi-kreatif', function () {
 });
 
 Route::get('/portal', function () {
-    return view('portal.index');
+    $infoList = InfoController::index();
+    return view('portal.index', compact('infoList'));
 });
 
 Route::get('/portal.show', function () {
-    return view('portal.show');
+    $info = InfoController::getLatestInfo()[0];
+    $infoList = array_slice(InfoController::getLatestInfo(4), 1, 3);
+    return view('portal.show', compact('info', 'infoList'));
 });
 
 Route::get('/sop/{any?}', function () {
