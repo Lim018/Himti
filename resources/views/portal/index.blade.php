@@ -1,4 +1,4 @@
-           @php
+           {{-- @php
          //   URL untuk ke detail informasi = '/portal/detail/{id}'
          //   Contoh URL untuk ke detail informasi = '/portal/detail/1'
          //   Infokan ke grup jika mau diganti pakai slug
@@ -175,7 +175,7 @@
                   'date' => '2024-05-05',
                ],
             ];
-            @endphp
+            @endphp --}}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -210,7 +210,7 @@
                         <div class="item-img" style="background: {{ $infoList[$i]['image'] }}"></div>
                         <div class="item-content">
                            <h3>{{ $infoList[$i]['title'] }}</h3>
-                           <p>{{ $infoList[$i]['content'] }}</p>
+                           <p>{{ $infoList[$i]['body'] }}</p>
                            <p class="update-date">{{ $infoList[$i]['date'] }}</>
                         </div>
                      </div>
@@ -233,7 +233,7 @@
                <div class="top" style="background: url({{ $info['image'] }}); background-size: cover; background-position: center;"></div>
                <div class="bottom">
                   <h3>{{ $info['title'] }}</h3>
-                  <p>{{ \Illuminate\Support\Str::limit($info['content'], 40, '...') }}</p>
+                  <p>{{ \Illuminate\Support\Str::limit($info['body'], 40, '...') }}</p>
                   <p>{{ $info['date'] }}</p>
                </div>
             </div>
