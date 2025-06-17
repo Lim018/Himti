@@ -5,7 +5,7 @@ use Illuminate\Support\Facades\Route;
 use \App\Http\Controllers\InfoController;
 
 Route::get('/', function () {
-    return view('news.index');
+    return view('compro');
 });
 
 Route::get('/news', function () {

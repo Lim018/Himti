@@ -15,7 +15,7 @@ class NewsController extends Controller
     public static function index()
     {
         
-        $news = News::all()->map(function ($item) {
+        $news = News::orderBy('date', 'desc')->get()->map(function ($item) {
             $data = Carbon::parse($item->date);
             $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
             $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));

@@ -1,4 +1,4 @@
-   @php
+   {{-- @php
       // Contoh data yang dikirim ke view.
       // $info untuk informasi yang ditampilkan di bagian utama.
       // $infoList untuk daftar informasi lainnya (3 info terakhir) yang ditampilkan di bagian bawah.
@@ -35,7 +35,7 @@
          ],
       ];
    @endphp
-
+ --}}
 
 <!DOCTYPE html>
 <html lang="en">

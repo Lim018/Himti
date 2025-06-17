@@ -223,12 +223,13 @@
 }
 
 .news-content {
-    height: 140px;
+    height: fit-content;
     background-color: white;
     padding: 12px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    gap: 10px;
 }
 
 .news-content h3 {
@@ -243,7 +244,7 @@
 /* Responsive adjustments */
 @media (max-width: 768px) {
     .news-card {
-        width: 150px;
+        width: fit-content;
         height: fit-content;
     }
 
@@ -252,7 +253,7 @@
     }
 
     .news-content {
-        height: 90px;
+        height: fit-content;
         font-size: 0.8em;
     }
 }
@@ -272,7 +273,7 @@
     }
 
     .news-content {
-        height: 90px;
+        height: fit-content;
         font-size: 0.8em;
     }
 
