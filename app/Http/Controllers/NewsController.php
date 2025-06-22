@@ -53,6 +53,20 @@ class NewsController extends Controller
         return $news;
     }
 
+    public static function getNewsById($id)
+    {
+        $news = News::with('department')->find($id);
+        if ($news) {
+            $news->date = Carbon::parse($news->date)->locale('id')->translatedFormat('j F Y');
+            $news->department_name = ucwords(str_replace('_', ' ', $news->department->name));
+            unset($news->department);
+            unset($news->department_id);
+            unset($news->created_at);
+            unset($news->updated_at);
+        }
+        return $news;
+    }
+
     /**
      * Menyimpan berita baru ke database.
      *

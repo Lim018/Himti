@@ -35,4 +35,16 @@ class InfoController extends Controller
         
         return $infos;
     }
+
+    public static function getInfoById($id)
+    {
+        $info = Info::find($id);
+        if ($info) {
+            $info->date = \Carbon\Carbon::parse($info->date)->locale('id')->translatedFormat('j F Y');
+            unset($info->created_at);
+            unset($info->updated_at);
+        }
+        return $info;
+    }
+
 }
