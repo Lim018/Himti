@@ -46,10 +46,9 @@ class NewsController extends Controller
     }
 
     public static function getNewsWithPagination($perPage = 4){
-        return News::orderBy('created_at', 'desc')
-        ->paginate($perPage)
-        ->map(function ($item) {
-            $data = Carbon::parse($item->date);
+        $list =  News::orderBy('created_at', 'desc')
+        ->paginate($perPage);
+        $list->getCollection()->transform(function ($item) {
             $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
             $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
             unset($item->department);
@@ -58,6 +57,7 @@ class NewsController extends Controller
             unset($item->updated_at);
             return $item;
         });
+        return $list;
     }
 
 
