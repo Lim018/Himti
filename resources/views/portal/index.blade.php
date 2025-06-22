@@ -1,3 +1,7 @@
+@php
+   \Carbon\Carbon::setLocale('id');
+@endphp
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -28,12 +32,12 @@
                      $updateCount = min(3, count($infoList));
                   @endphp
                   @for ($i = 0; $i < $updateCount; $i++)
-                     <div class="update-item" style="{{ $i === 0 ? '' : 'display:none;'}}" onclick="window.location.href='{{ url('/portal.show/detail/' . $infoList[$i]['id']) }}'">
+                     <div class="update-item" style="{{ $i === 0 ? '' : 'display:none;'}}" onclick="window.location.href='{{ url('/portal/detail/' . $infoList[$i]['id']) }}'">
                         <div class="item-img" style="background: {{ $infoList[$i]['image'] }}"></div>
                         <div class="item-content">
                            <h3>{{ $infoList[$i]['title'] }}</h3>
                            <p>{{ $infoList[$i]['body'] }}</p>
-                           <p class="update-date">{{ $infoList[$i]['date'] }}</p>
+                           <p class="update-date">{{ \Carbon\Carbon::parse($infoList[$i]['date'])->translatedFormat('j F Y') }}</p>
                         </div>
                      </div>
                   @endfor
@@ -51,12 +55,12 @@
       <div class="info-container">
          @if (count($infoList) > 0)
          @foreach($infoList as $index => $info)
-            <div class="info-cards info-card-item {{ $index }}" style="{{ $index >= 6 ? 'display:none;' : '' }}" onclick="window.location.href='{{ url('/portal.show/detail/' . $info['id']) }}'" data-aos="fade-up" data-aos-duration="1000">
+            <div class="info-cards info-card-item {{ $index }}" style="{{ $index >= 6 ? 'display:none;' : '' }}" onclick="window.location.href='{{ url('/portal/detail/' . $info['id']) }}'" data-aos="fade-up" data-aos-duration="1000">
                <div class="top" style="background: url({{ $info['image'] }}); background-size: cover; background-position: center;"></div>
                <div class="bottom">
-                  <h3>{{ $info['title'] }}</h3>
-                  <p>{{ \Illuminate\Support\Str::limit($info['body'], 40, '...') }}</p>
-                  <p>{{ $info['date'] }}</p>
+                  <h3>{{ \Illuminate\Support\Str::limit($info['title'], 45, '...') }}</h3>
+                  <p>{{ \Illuminate\Support\Str::limit($info['body'], 60, '...') }}</p>
+                  <p>{{ \Carbon\Carbon::parse($info['date'])->translatedFormat('j F Y') }}</p>
                </div>
             </div>
          @endforeach

@@ -14,7 +14,7 @@ Route::get('/news', function () {
 });
 
 
-Route::get('/news.show/detail/{id}', function ($id) {
+Route::get('/news/detail/{id}', function ($id) {
     $news = NewsController::getNewsById($id);
     if (!$news) {
         return redirect('/news')->with('error', 'Berita tidak ditemukan.');
@@ -40,7 +40,7 @@ Route::get('/portal', function () {
     return view('portal.index', compact('infoList'));
 });
 
-Route::get('/portal.show/detail/{id}', function ($id) {
+Route::get('/portal/detail/{id}', function ($id) {
     $info = InfoController::getInfoById($id);
     if (!$info) {
         return redirect('/portal')->with('error', 'Informasi tidak ditemukan.');
