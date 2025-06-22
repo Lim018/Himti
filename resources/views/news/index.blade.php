@@ -14,7 +14,7 @@
    @include('components.navbar')
    <section class="highlight">
       <h1>HIMTI NEWS</h1>
-      <div class="highlight_news" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news/detail/' . $newsList[0]['id']) }}'">
+      <div class="highlight_news" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news.show/detail/' . $newsList[0]['id']) }}'">
          <div class="highlight_image" style="background: url('{{ $newsList[0]['image'] ?? '' }}')"></div>
          <div class="highlight_content">
             <h3>
@@ -35,7 +35,7 @@
         <div class="news-container">
             <div class="news-scroll">
                @forelse ($newsList as $news)
-                  <div class="news-card" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news/detail/' . $news['id']) }}'">
+                  <div class="news-card" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news.show/detail/' . $news['id']) }}'">
                      <div class="news-image" style="background-image: url('{{ $news['image'] }}');"></div>
                      <div class="news-content">
                         <h3>{{ $news['title'] }}</h3>
