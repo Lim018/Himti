@@ -14,8 +14,11 @@ Route::get('/news', function () {
 });
 
 
-Route::get('/news.show', function () {
-    $news = NewsController::getLatestNews()[0];
+Route::get('/news.show/detail/{id}', function ($id) {
+    $news = NewsController::getNewsById($id);
+    if (!$news) {
+        return redirect('/news')->with('error', 'Berita tidak ditemukan.');
+    }
     $newsList = array_slice(NewsController::getLatestNews(4), 1, 3);
     return view('news.show', compact('news', 'newsList'));
 });
@@ -37,8 +40,11 @@ Route::get('/portal', function () {
     return view('portal.index', compact('infoList'));
 });
 
-Route::get('/portal.show', function () {
-    $info = InfoController::getLatestInfo()[0];
+Route::get('/portal.show/detail/{id}', function ($id) {
+    $info = InfoController::getInfoById($id);
+    if (!$info) {
+        return redirect('/portal')->with('error', 'Informasi tidak ditemukan.');
+    }
     $infoList = array_slice(InfoController::getLatestInfo(4), 1, 3);
     return view('portal.show', compact('info', 'infoList'));
 });
