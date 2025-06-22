@@ -25,15 +25,7 @@ class NewsController extends Controller
             unset($item->updated_at);
             return $item;
         });
-        // Mengembalikan data dalam format JSON
         return $news;
-        // return "ehebwehcbewicb";
-
-        // {
-        //     $news = News::with('department')->get();
-        //     // Manipulate $news as needed
-        //     return $news;
-        // }
     }
 
     public static function getLatestNews($number = 1) {
@@ -52,6 +44,22 @@ class NewsController extends Controller
             ->toArray();
         return $news;
     }
+
+    public static function getNewsWithPagination($perPage = 4){
+        return News::orderBy('created_at', 'desc')
+        ->paginate($perPage)
+        ->map(function ($item) {
+            $data = Carbon::parse($item->date);
+            $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
+            $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
+            unset($item->department);
+            unset($item->department_id);
+            unset($item->created_at);
+            unset($item->updated_at);
+            return $item;
+        });
+    }
+
 
     public static function getNewsById($id)
     {

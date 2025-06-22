@@ -14,16 +14,16 @@
    @include('components.navbar')
    <section class="highlight">
       <h1>HIMTI NEWS</h1>
-      <div class="highlight_news" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news/detail/' . $newsList[0]['id']) }}'">
-         <div class="highlight_image" style="background: url('{{ $newsList[0]['image'] ?? '' }}')"></div>
+      <div class="highlight_news" data-aos="fade-up" data-aos-duration="1000" onclick="window.location.href='{{ url('/news/detail/' . $latestNews['id']) }}'">
+         <div class="highlight_image" style="background: url('{{ $latestNews['image'] ?? '' }}')"></div>
          <div class="highlight_content">
             <h3>
-               {{ $newsList[0]['title'] ?? 'Belum ada berita saat ini.' }}
+               {{ $latestNews['title'] ?? 'Belum ada berita saat ini.' }}
             </h3>
             <div>
-               {!! \Illuminate\Support\Str::limit($newsList[0]['body'] ?? '', 250, '...') !!}
+               {!! \Illuminate\Support\Str::limit($latestNews['body'] ?? '', 250, '...') !!}
             </div>
-            <p>{{ $newsList[0]['department_name'] ?? '' }}<br>{{ $newsList[0]['date'] ?? '' }}</p>
+            <p>{{ $latestNews['department_name'] ?? '' }}<br>{{ $latestNews['date'] ?? '' }}</p>
          </div>
       </div>
       <h3 class="sub_title">HIGHLIGHT NEWS</h3>

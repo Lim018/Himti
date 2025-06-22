@@ -4,6 +4,7 @@ namespace Database\Seeders;
 
 use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
+use Illuminate\Support\Facades\DB;
 use App\Models\Info; // Import your Info model
 use Faker\Factory as Faker; // Import Faker for generating dummy data
 
@@ -18,7 +19,7 @@ class InfoSeeder extends Seeder
         $faker = Faker::create('id_ID');
 
         // --- Static Sample Data with HTML elements ---
-        Info::create([
+        DB::table('info')->insert([
             'image' => null,
             'title' => 'Pengumuman Penting Mengenai Libur Idul Adha 2025',
             'date' => '2025-06-16', // Updated date for current context
@@ -27,7 +28,7 @@ class InfoSeeder extends Seeder
                        <p>Kami memohon maaf atas ketidaknyamanan yang ditimbulkan dan mengucapkan selamat hari raya Idul Adha.</p>',
         ]);
 
-        Info::create([
+        DB::table('info')->insert([
             'image' => null,
             'title' => 'Peningkatan Kualitas Layanan Pelanggan',
             'date' => '2025-05-28',
@@ -46,7 +47,7 @@ class InfoSeeder extends Seeder
             }
             $bodyContent = str_replace($faker->word(), '<b>' . $faker->word() . '</b>', $bodyContent); // Optionally bold a random word
 
-            Info::create([
+            DB::table('info')->insert([
                 'image' => null,
                 'title' => $faker->sentence(5, true),
                 'date' => $faker->dateTimeBetween('-6 months', 'now')->format('Y-m-d'),

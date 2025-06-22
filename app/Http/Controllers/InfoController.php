@@ -36,6 +36,11 @@ class InfoController extends Controller
         return $infos;
     }
 
+    public static function getInfoWithPagination($perPage = 10)
+    {
+        return Info::orderBy('date', 'desc')->paginate($perPage);
+    }
+
     public static function getInfoById($id)
     {
         $info = Info::find($id);

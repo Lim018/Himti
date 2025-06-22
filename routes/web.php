@@ -9,8 +9,9 @@ Route::get('/', function () {
 });
 
 Route::get('/news', function () {
-    $newsList = NewsController::index();
-    return view('news.index', compact('newsList'));
+    $latestNews = NewsController::getLatestNews()[0];
+    $newsList = NewsController::getNewsWithPagination();
+    return view('news.index', compact('latestNews','newsList'));
 });
 
 
@@ -19,7 +20,7 @@ Route::get('/news/detail/{id}', function ($id) {
     if (!$news) {
         return redirect('/news')->with('error', 'Berita tidak ditemukan.');
     }
-    $newsList = array_slice(NewsController::getLatestNews(4), 1, 3);
+    $newsList = NewsController::getNewsWithPagination();
     return view('news.show', compact('news', 'newsList'));
 });
 
