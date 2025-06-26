@@ -16,8 +16,9 @@ class News extends Model
         'image',
     ];
 
-    public function department()
+     public function department()
     {
-        return $this->belongsTo(Department::class, 'department_id', 'id');
+        // 'department_id' adalah foreign key di tabel tb_companyprofile_news
+        return $this->belongsTo(Department::class, 'department_id');
     }
 }

@@ -6,7 +6,7 @@ use OpenAdmin\Admin\Controllers\AdminController;
 use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
-use \App\Models\Department;
+use App\Models\Department; // Pastikan model Department ada
 
 class DepartmentController extends AdminController
 {
@@ -15,7 +15,7 @@ class DepartmentController extends AdminController
      *
      * @var string
      */
-    protected $title = 'Deparment';
+    protected $title = 'Department';
 
     /**
      * Make a grid builder.
@@ -26,10 +26,22 @@ class DepartmentController extends AdminController
     {
         $grid = new Grid(new Department());
 
-        $grid->column('id', __('Id'));
-        $grid->column('name', __('Name'));
-        $grid->column('created_at', __('Created at'));
-        $grid->column('updated_at', __('Updated at'));
+        $grid->column('id', __('Id'))->sortable();
+        $grid->column('name', __('Name (Short)'));
+        $grid->column('long_name', __('Long Name'));
+        $grid->column('created_at', __('Created at'))->sortable();
+        $grid->column('updated_at', __('Updated at'))->sortable();
+        
+        // Menambahkan fungsi filter/pencarian
+        $grid->filter(function($filter){
+            // Mematikan filter default (pencarian berdasarkan ID)
+            $filter->disableIdFilter();
+
+            // Filter untuk mencari berdasarkan 'name' dan 'long_name'
+            $filter->like('name', __('Name (Short)'));
+            $filter->like('long_name', __('Long Name'));
+        });
+
 
         return $grid;
     }
@@ -45,7 +57,8 @@ class DepartmentController extends AdminController
         $show = new Show(Department::findOrFail($id));
 
         $show->field('id', __('Id'));
-        $show->field('name', __('Name'));
+        $show->field('name', __('Name (Short)'));
+        $show->field('long_name', __('Long Name'));
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -61,7 +74,11 @@ class DepartmentController extends AdminController
     {
         $form = new Form(new Department());
 
-        $form->text('name', __('Name'));
+        $form->display('id', __('ID'));
+        $form->text('name', __('Name (Short)'))->rules('required|string|max:255');
+        $form->text('long_name', __('Long Name'))->rules('required|string|max:255');
+        $form->display('created_at', __('Created At'));
+        $form->display('updated_at', __('Updated At'));
 
         return $form;
     }

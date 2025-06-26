@@ -6,20 +6,22 @@ use OpenAdmin\Admin\Controllers\AdminController;
 use OpenAdmin\Admin\Form;
 use OpenAdmin\Admin\Grid;
 use OpenAdmin\Admin\Show;
-use \App\Models\News; // Import your News model
-use \App\Models\Department; // Import your Department model for dropdown
+use \App\Models\News;
+use \App\Models\Department;
+// Kita tidak perlu lagi 'Storage' di sini, tapi tidak apa-apa jika tetap ada
+use Illuminate\Support\Facades\Storage; 
 
 class NewsController extends AdminController
 {
     /**
-     * Title for current resource.
+     * Judul untuk resource ini.
      *
      * @var string
      */
-    protected $title = 'News'; // Set the title for the News resource
+    protected $title = 'News';
 
     /**
-     * Make a grid builder.
+     * Membuat tampilan grid (daftar data).
      *
      * @return Grid
      */
@@ -27,21 +29,20 @@ class NewsController extends AdminController
     {
         $grid = new Grid(new News());
 
-        // Columns to display in the grid view
-        $grid->column('id', __('Id')); // Make ID sortable
-        $grid->column('title', __('Title')); // Allow editing title directly in grid
-        // Display the department name instead of just the ID
+        $grid->column('id', __('Id'))->sortable();
+        $grid->column('title', __('Title'));
         $grid->column('department.name', __('Department'));
         $grid->column('date', __('Date'))->display(function ($date) {
-            return date('d M Y', strtotime($date)); // Format date for better readability
+            return date('d M Y', strtotime($date));
         })->sortable();
-        $grid->column('body', __('Body'))->hide(); // Hide long text by default
-        $grid->column('desc', __('Description'))->hide(); // Hide long text by default
-        $grid->column('image', __('Image'))->image(env('APP_URL') . '/uploads/', 50, 50); // Display image if stored as path
+
+        $grid->column('body', __('Body'))->hide();
+        $grid->column('desc', __('Description'))->hide();
+        $grid->column('image', __('Image'))->image('');
+
         $grid->column('created_at', __('Created at'))->sortable();
         $grid->column('updated_at', __('Updated at'))->sortable();
 
-        // Add filters for better data management
         $grid->filter(function($filter){
             $filter->like('title', __('Title'));
             $filter->equal('department_id', __('Department'))->select(Department::pluck('name', 'id'));
@@ -52,7 +53,7 @@ class NewsController extends AdminController
     }
 
     /**
-     * Make a show builder.
+     * Membuat tampilan detail.
      *
      * @param mixed $id
      * @return Show
@@ -61,15 +62,13 @@ class NewsController extends AdminController
     {
         $show = new Show(News::findOrFail($id));
 
-        // Fields to display in the detail view
         $show->field('id', __('Id'));
         $show->field('title', __('Title'));
-        // Show department name from the relationship
         $show->field('department.name', __('Department Name'));
         $show->field('date', __('Date'));
-        $show->field('body', __('Body'));
+        $show->field('body', __('Body'))->unescape();
         $show->field('desc', __('Description'));
-        $show->field('image', __('Image'))->image(); // Display full-size image
+        $show->field('image', __('Image'))->image();
         $show->field('created_at', __('Created at'));
         $show->field('updated_at', __('Updated at'));
 
@@ -77,7 +76,7 @@ class NewsController extends AdminController
     }
 
     /**
-     * Make a form builder.
+     * Membuat form untuk create dan edit.
      *
      * @return Form
      */
@@ -85,29 +84,14 @@ class NewsController extends AdminController
     {
         $form = new Form(new News());
 
-        // Form fields for creating/editing news
         $form->text('title', __('Title'))->rules('required|string|max:255');
-
-        // Dropdown for selecting department
         $form->select('department_id', __('Department'))
              ->options(Department::pluck('name', 'id'))
              ->rules('required');
-
         $form->date('date', __('Date'))->default(date('Y-m-d'))->rules('required|date');
-        $form->UEditor('body', __('Body'))->rules('required|string'); // Assuming you have UEditor or similar rich text editor
-        $form->textarea('desc', __('Description'))->nullable()->rules('nullable|string|max:500');
-
-        // Image upload field (assuming images are stored in storage/app/public/uploads and linked via public symlink)
-        $form->image('image', __('Image'))->uniqueName()->removable()->nullable();
-
-        // Callback before saving (optional, e.g., to handle image uploads if not using form->image directly)
-        $form->saving(function (Form $form) {
-            // Example: if you were manually handling image upload from a file field
-            // if ($form->image && $form->image->extension()) {
-            //     $form->image = $form->image->store('news_images', 'public');
-            // }
-        });
-
+        $form->textarea('body', __('Body'))->rules('required|string');
+        $form->text('desc', __('Description'))->rules('nullable|string|max:500');
+        $form->image('image', __('Image'))->uniqueName()->removable()->rules('nullable|image');
 
         return $form;
     }
