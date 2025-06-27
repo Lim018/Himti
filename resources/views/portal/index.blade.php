@@ -1,22 +1,6 @@
-@php
-   \Carbon\Carbon::setLocale('id');
-@endphp
+@extends('layouts.app')
 
-<!DOCTYPE html>
-<html lang="en">
-<head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-   <title>Document</title>
-   <link rel="stylesheet" href="{{ asset('css/global.css') }}">
-   <link rel="stylesheet" href="{{ asset('css/portal/index.css') }}">
-   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
-   <style>
-   </style>
-</head>
-<body>
-   @include('components.navbar')
+@section('content')
     <section class="hero-section">
         <div class="container">
             <div class="portal-content">
@@ -33,7 +17,7 @@
                   @endphp
                   @for ($i = 0; $i < $updateCount; $i++)
                      <div class="update-item" style="{{ $i === 0 ? '' : 'display:none;'}}" onclick="window.location.href='{{ url('/portal/detail/' . $infoList[$i]['id']) }}'">
-                        <div class="item-img" style="background: {{ $infoList[$i]['image'] }}"></div>
+                        <div class="item-img"></div>
                         <div class="item-content">
                            <h3>{{ $infoList[$i]['title'] }}</h3>
                            <p>{{ $infoList[$i]['body'] }}</p>
@@ -55,8 +39,8 @@
       <div class="info-container">
          @if (count($infoList) > 0)
          @foreach($infoList as $index => $info)
-            <div class="info-cards info-card-item {{ $index }}" style="{{ $index >= 6 ? 'display:none;' : '' }}" onclick="window.location.href='{{ url('/portal/detail/' . $info['id']) }}'" data-aos="fade-up" data-aos-duration="1000">
-               <div class="top" style="background: url({{ $info['image'] }}); background-size: cover; background-position: center;"></div>
+            <div class="info-cards info-card-item {{ $index }}" onclick="window.location.href='{{ url('/portal/detail/') }}'" data-aos="fade-up" data-aos-duration="1000">
+               <div class="top"></div>
                <div class="bottom">
                   <h3>{{ \Illuminate\Support\Str::limit($info['title'], 45, '...') }}</h3>
                   <p>{{ \Illuminate\Support\Str::limit($info['body'], 60, '...') }}</p>
@@ -78,12 +62,4 @@
          @endif      
       <div class="logo-corner"></div>
     </section>
-    @include('components.footer')
-
-   <script src="{{ asset('js/portal.js') }}"></script>
-   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
-   <script>
-      AOS.init();
-   </script>
-</body>
-</html>
+@endsection
