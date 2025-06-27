@@ -59,8 +59,8 @@ Sebagai motor penggerak inovasi dan kemandirian finansial, Ekraf berfokus pada p
                 <div class="staggered-cards">
                     <div class="card-row top-row">
                         <div class="program-card-staggered left-partial" data-aos="fade-right" data-aos-delay="100">
-                            <h3>LOREM IP</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur odio sem, in pharetra turpis</p>
+                            <h3>TEKNOVISTAFEST</h3>
+                            <p>Proker gabungan departemen pendidikan dan perhubungan. Proker ini merupakan kegiatan lomba dan talkshow untuk target nya mahasiswa nfaosinfoais asifnaoi ianfoi asnfn</p>
                         </div>
                         <div class="program-card-staggered" data-aos="fade-up" data-aos-delay="200">
                             <h3>LOREM IPSUM</h3>
