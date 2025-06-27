@@ -18,4 +18,5 @@ Route::group([
     $router->resource('users', UserController::class);
     $router->resource('news', NewsController::class);
     $router->resource('departments', DepartmentController::class);
+   
 });

@@ -1,7 +1,5 @@
 @extends('layouts.app')
 
-@section('title', 'About - HIMTI Teknik Informatika')
-
 @section('content')
 <div class="himti-structure">
     <div class="background-pattern">
@@ -9,9 +7,6 @@
             <img src="{{ asset('images/about/background-SELARAS.png') }}" alt="Background pattern">
         </div>
     </div>
-
-    @include('components.navbar')
-    <br><br><br><br><br>
 
     <main class="container main-content">
         <section class="hero-section text-center" data-aos="fade-up">
@@ -193,8 +188,5 @@
             </div>
         </section>
     </main>
-
-    @include('components.footer')
-
 </div>
 @endsection
