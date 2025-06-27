@@ -1,4 +1,4 @@
-   @php
+   {{-- @php
       // Contoh data yang dikirim ke view.
       // $info untuk informasi yang ditampilkan di bagian utama.
       // $infoList untuk daftar informasi lainnya (3 info terakhir) yang ditampilkan di bagian bawah.
@@ -35,7 +35,7 @@
          ],
       ];
    @endphp
-
+ --}}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -56,7 +56,7 @@
    <section class="content">
       <div class="info" data-aos="fade-up" data-aos-duration="1000">
          <h1>{{ $info['title'] }}</h1>
-         <p class="date">{{ date('d F Y', strtotime($info['date'])) }}</p>
+         <p class="date">{{ $info['date'] }}</p>
          <div class="body">
             {!! $info['body'] !!}
          </div>
@@ -70,7 +70,7 @@
                   <div class="bottom">
                      <h3>{{ $item['title'] }}</h3>
                      <p>{!! \Illuminate\Support\Str::limit(strip_tags($item['body']), 40, '...') !!}</p>
-                     <p class="date">{{ date('d F Y', strtotime($item['date'])) }}</p>
+                     <p class="date">{{ $info['date'] }}</p>
                   </div>
                </div>
             @endforeach

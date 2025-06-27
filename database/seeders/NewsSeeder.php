@@ -24,7 +24,12 @@ class NewsSeeder extends Seeder
             'title' => 'Medinfo Luncurkan Aplikasi Berita Interaktif Terbaru',
             'department_id' => $departmentIds['medinfo'],
             'date' => '2025-06-01',
-            'body' => 'Departemen Media Informasi dan Komunikasi (Medinfo) dengan bangga memperkenalkan aplikasi berita interaktif yang akan memudahkan akses informasi bagi seluruh civitas akademika.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Aplikasi berita inovatif hadir dari Medinfo.',
             'image' => 'medinfo_app.jpg',
             'created_at' => now(),
@@ -34,7 +39,12 @@ class NewsSeeder extends Seeder
             'title' => 'Workshop Jurnalistik Digital Medinfo Sukses Digelar',
             'department_id' => $departmentIds['medinfo'],
             'date' => '2025-05-28',
-            'body' => 'Workshop jurnalistik digital yang diadakan Medinfo menarik banyak peserta. Materi yang diberikan meliputi penulisan artikel SEO-friendly dan optimasi media sosial.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Medinfo adakan workshop jurnalistik digital.',
             'image' => null,
             'created_at' => now(),
@@ -44,7 +54,12 @@ class NewsSeeder extends Seeder
             'title' => 'Kolaborasi Medinfo dan Komunitas Fotografi Kampus',
             'department_id' => $departmentIds['medinfo'],
             'date' => '2025-05-25',
-            'body' => 'Medinfo menjalin kerja sama dengan komunitas fotografi kampus untuk dokumentasi berbagai kegiatan dan acara, menghasilkan visual yang menarik.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Medinfo kolaborasi fotografi kampus.',
             'image' => 'medinfo_foto.png',
             'created_at' => now(),
@@ -54,7 +69,12 @@ class NewsSeeder extends Seeder
             'title' => 'Podcast "Suara Kampus" Episode Terbaru Medinfo',
             'department_id' => $departmentIds['medinfo'],
             'date' => '2025-05-20',
-            'body' => 'Episode terbaru podcast "Suara Kampus" dari Medinfo membahas isu-isu terkini dan menghadirkan narasumber inspiratif. Jangan lewatkan!',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Podcast "Suara Kampus" rilis episode baru.',
             'image' => null,
             'created_at' => now(),
@@ -64,7 +84,12 @@ class NewsSeeder extends Seeder
             'title' => 'Buletin Mingguan Medinfo: Edisi Khusus Ramadhan',
             'department_id' => $departmentIds['medinfo'],
             'date' => '2025-05-15',
-            'body' => 'Buletin mingguan Medinfo edisi khusus Ramadhan telah terbit, berisi liputan kegiatan keagamaan dan tips sehat selama berpuasa.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Edisi spesial Ramadhan buletin Medinfo.',
             'image' => 'medinfo_buletin.jpg',
             'created_at' => now(),
@@ -76,7 +101,12 @@ class NewsSeeder extends Seeder
             'title' => 'Rapat Pleno Eksekutif Bahas Program Unggulan 2025',
             'department_id' => $departmentIds['eksekutif'],
             'date' => '2025-06-02',
-            'body' => 'Departemen Eksekutif mengadakan rapat pleno untuk membahas dan menyusun rencana program-program unggulan yang akan dilaksanakan sepanjang tahun 2025.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Eksekutif rapat program unggulan 2025.',
             'image' => null,
             'created_at' => now(),
@@ -86,7 +116,12 @@ class NewsSeeder extends Seeder
             'title' => 'Eksekutif Gelar Audiensi dengan Perwakilan Mahasiswa',
             'department_id' => $departmentIds['eksekutif'],
             'date' => '2025-05-30',
-            'body' => 'Dalam upaya meningkatkan komunikasi, Departemen Eksekutif membuka forum audiensi dengan perwakilan mahasiswa untuk menyerap aspirasi dan masukan.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Audiensi eksekutif dengan mahasiswa.',
             'image' => null,
             'created_at' => now(),
@@ -96,7 +131,12 @@ class NewsSeeder extends Seeder
             'title' => 'Kunjungan Kerja Departemen Eksekutif ke Kantor Pusat',
             'department_id' => $departmentIds['eksekutif'],
             'date' => '2025-05-26',
-            'body' => 'Delegasi dari Departemen Eksekutif melakukan kunjungan kerja ke kantor pusat untuk koordinasi strategi dan pelaporan kinerja triwulan.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Eksekutif kunjungan kerja ke kantor pusat.',
             'image' => null,
             'created_at' => now(),
@@ -106,7 +146,12 @@ class NewsSeeder extends Seeder
             'title' => 'Eksekutif Sampaikan Laporan Pertanggungjawaban Tengah Tahun',
             'department_id' => $departmentIds['eksekutif'],
             'date' => '2025-05-23',
-            'body' => 'Laporan pertanggungjawaban tengah tahun Departemen Eksekutif telah disampaikan, menunjukkan kemajuan signifikan dalam pencapaian target.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Laporan tengah tahun eksekutif disampaikan.',
             'image' => null,
             'created_at' => now(),
@@ -116,7 +161,12 @@ class NewsSeeder extends Seeder
             'title' => 'Sosialisasi Kebijakan Baru oleh Departemen Eksekutif',
             'department_id' => $departmentIds['eksekutif'],
             'date' => '2025-05-17',
-            'body' => 'Departemen Eksekutif mengadakan sosialisasi mengenai kebijakan-kebijakan baru yang akan segera diterapkan untuk efisiensi organisasi.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Sosialisasi kebijakan baru eksekutif.',
             'image' => null,
             'created_at' => now(),
@@ -128,7 +178,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pendidikan Luncurkan Program Mentoring Mahasiswa Baru',
             'department_id' => $departmentIds['pendidikan'],
             'date' => '2025-06-03',
-            'body' => 'Departemen Pendidikan meluncurkan program mentoring komprehensif untuk membantu mahasiswa baru beradaptasi dan berprestasi di lingkungan kampus.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Program mentoring maba oleh Pendidikan.',
             'image' => 'pendidikan_mentoring.jpg',
             'created_at' => now(),
@@ -138,7 +193,12 @@ class NewsSeeder extends Seeder
             'title' => 'Seminar Peningkatan Kualitas Dosen oleh Pendidikan',
             'department_id' => $departmentIds['pendidikan'],
             'date' => '2025-05-31',
-            'body' => 'Departemen Pendidikan mengadakan seminar dan lokakarya bagi dosen untuk meningkatkan kualitas pengajaran dan metodologi pembelajaran inovatif.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pendidikan adakan seminar dosen.',
             'image' => null,
             'created_at' => now(),
@@ -148,7 +208,12 @@ class NewsSeeder extends Seeder
             'title' => 'Rilis Modul Pembelajaran Interaktif Terbaru Pendidikan',
             'department_id' => $departmentIds['pendidikan'],
             'date' => '2025-05-29',
-            'body' => 'Modul pembelajaran interaktif untuk mata kuliah dasar telah dirilis oleh Departemen Pendidikan, diharapkan dapat meningkatkan minat belajar mahasiswa.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Modul pembelajaran interaktif baru.',
             'image' => null,
             'created_at' => now(),
@@ -158,7 +223,12 @@ class NewsSeeder extends Seeder
             'title' => 'Departemen Pendidikan Buka Pendaftaran Program Magang',
             'department_id' => $departmentIds['pendidikan'],
             'date' => '2025-05-24',
-            'body' => 'Pendaftaran program magang bagi mahasiswa tingkat akhir dibuka oleh Departemen Pendidikan, memberikan kesempatan pengalaman kerja nyata.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pendaftaran magang dibuka Pendidikan.',
             'image' => null,
             'created_at' => now(),
@@ -168,7 +238,12 @@ class NewsSeeder extends Seeder
             'title' => 'Kompetisi Inovasi Pendidikan Digelar Departemen Pendidikan',
             'department_id' => $departmentIds['pendidikan'],
             'date' => '2025-05-19',
-            'body' => 'Departemen Pendidikan menyelenggarakan kompetisi inovasi pendidikan untuk mendorong kreativitas mahasiswa dalam menciptakan solusi pembelajaran.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Kompetisi inovasi oleh Pendidikan.',
             'image' => null,
             'created_at' => now(),
@@ -180,7 +255,12 @@ class NewsSeeder extends Seeder
             'title' => 'Perhubungan Resmikan Jalur Bus Kampus Baru',
             'department_id' => $departmentIds['perhubungan'],
             'date' => '2025-06-01',
-            'body' => 'Departemen Perhubungan meresmikan jalur bus kampus baru yang lebih efisien dan terintegrasi, mengurangi waktu tunggu bagi penumpang.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Jalur bus kampus baru diresmikan.',
             'image' => 'perhubungan_bus.jpg',
             'created_at' => now(),
@@ -190,7 +270,12 @@ class NewsSeeder extends Seeder
             'title' => 'Sosialisasi Keselamatan Berkendara dari Perhubungan',
             'department_id' => $departmentIds['perhubungan'],
             'date' => '2025-05-27',
-            'body' => 'Departemen Perhubungan mengadakan sosialisasi keselamatan berkendara bagi seluruh mahasiswa dan staf, bekerja sama dengan kepolisian setempat.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Sosialisasi keselamatan berkendara.',
             'image' => null,
             'created_at' => now(),
@@ -200,7 +285,12 @@ class NewsSeeder extends Seeder
             'title' => 'Perhubungan Uji Coba Sistem Parkir Pintar',
             'department_id' => $departmentIds['perhubungan'],
             'date' => '2025-05-22',
-            'body' => 'Dalam upaya modernisasi, Departemen Perhubungan sedang menguji coba sistem parkir pintar berbasis sensor untuk efisiensi penggunaan lahan parkir.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Uji coba sistem parkir pintar.',
             'image' => null,
             'created_at' => now(),
@@ -210,7 +300,12 @@ class NewsSeeder extends Seeder
             'title' => 'Upgrade Fasilitas Pejalan Kaki oleh Perhubungan',
             'department_id' => $departmentIds['perhubungan'],
             'date' => '2025-05-18',
-            'body' => 'Departemen Perhubungan melakukan peningkatan fasilitas pejalan kaki di sekitar area kampus untuk kenyamanan dan keamanan pengguna.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Fasilitas pejalan kaki ditingkatkan.',
             'image' => null,
             'created_at' => now(),
@@ -220,7 +315,12 @@ class NewsSeeder extends Seeder
             'title' => 'Perhubungan Adakan Survei Kepuasan Transportasi',
             'department_id' => $departmentIds['perhubungan'],
             'date' => '2025-05-14',
-            'body' => 'Departemen Perhubungan mengajak seluruh anggota kampus untuk berpartisipasi dalam survei kepuasan layanan transportasi internal.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Survei kepuasan transportasi diluncurkan.',
             'image' => null,
             'created_at' => now(),
@@ -232,7 +332,12 @@ class NewsSeeder extends Seeder
             'title' => 'Ekraf Gelar Festival Seni dan Budaya Kampus',
             'department_id' => $departmentIds['ekraf'],
             'date' => '2025-06-03',
-            'body' => 'Departemen Ekonomi Kreatif (Ekraf) menyelenggarakan festival seni dan budaya tahunan, menampilkan berbagai pertunjukan dan pameran karya.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Ekraf adakan festival seni dan budaya.',
             'image' => 'ekraf_festival.jpg',
             'created_at' => now(),
@@ -242,7 +347,12 @@ class NewsSeeder extends Seeder
             'title' => 'Workshop Membuat Kerajinan Tangan Berbasis Bahan Daur Ulang oleh Ekraf',
             'department_id' => $departmentIds['ekraf'],
             'date' => '2025-05-29',
-            'body' => 'Ekraf mengadakan workshop inovatif mengenai pembuatan kerajinan tangan dari bahan daur ulang, mendorong kreativitas dan keberlanjutan lingkungan.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Workshop kerajinan daur ulang Ekraf.',
             'image' => null,
             'created_at' => now(),
@@ -252,7 +362,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pameran Startup Kreatif Mahasiswa oleh Ekraf',
             'department_id' => $departmentIds['ekraf'],
             'date' => '2025-05-24',
-            'body' => 'Departemen Ekraf menyelenggarakan pameran startup kreatif yang didirikan oleh mahasiswa, menjembatani ide-ide inovatif dengan investor potensial.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Ekraf pamerkan startup kreatif mahasiswa.',
             'image' => null,
             'created_at' => now(),
@@ -262,7 +377,12 @@ class NewsSeeder extends Seeder
             'title' => 'Ekraf Adakan Kelas Desain Karakter Digital',
             'department_id' => $departmentIds['ekraf'],
             'date' => '2025-05-20',
-            'body' => 'Departemen Ekraf membuka kelas singkat desain karakter digital untuk pemula, dipandu oleh ahli industri animasi.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Kelas desain karakter digital Ekraf.',
             'image' => null,
             'created_at' => now(),
@@ -272,7 +392,12 @@ class NewsSeeder extends Seeder
             'title' => 'Kolaborasi Ekraf dengan Pengusaha Lokal untuk Produk UMKM',
             'department_id' => $departmentIds['ekraf'],
             'date' => '2025-05-15',
-            'body' => 'Ekraf bekerja sama dengan pengusaha UMKM lokal untuk mengembangkan produk-produk kreatif dan meningkatkan daya saing di pasar.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Ekraf kolaborasi UMKM lokal.',
             'image' => null,
             'created_at' => now(),
@@ -284,7 +409,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pengmas Sukses Gelar Kampanye Kesehatan di Desa X',
             'department_id' => $departmentIds['pengmas'],
             'date' => '2025-06-02',
-            'body' => 'Departemen Pengabdian Masyarakat (Pengmas) telah menyelesaikan kampanye kesehatan di Desa X, memberikan edukasi tentang hidup bersih dan sehat.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Kampanye kesehatan Pengmas berhasil.',
             'image' => 'pengmas_kesehatan.jpg',
             'created_at' => now(),
@@ -294,7 +424,12 @@ class NewsSeeder extends Seeder
             'title' => 'Program Pemberdayaan Ekonomi Masyarakat oleh Pengmas',
             'department_id' => $departmentIds['pengmas'],
             'date' => '2025-05-28',
-            'body' => 'Pengmas meluncurkan program pemberdayaan ekonomi dengan memberikan pelatihan kewirausahaan kepada masyarakat lokal untuk meningkatkan pendapatan.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pengmas luncurkan program ekonomi.',
             'image' => null,
             'created_at' => now(),
@@ -304,7 +439,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pengmas Adakan Bakti Sosial Lingkungan di Pesisir Pantai',
             'department_id' => $departmentIds['pengmas'],
             'date' => '2025-05-23',
-            'body' => 'Departemen Pengmas menggelar kegiatan bakti sosial pembersihan pantai dan edukasi lingkungan kepada warga pesisir.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pengmas adakan bakti sosial lingkungan.',
             'image' => null,
             'created_at' => now(),
@@ -314,7 +454,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pelatihan Teknologi Tepat Guna untuk Petani oleh Pengmas',
             'department_id' => $departmentIds['pengmas'],
             'date' => '2025-05-19',
-            'body' => 'Pengmas memberikan pelatihan penggunaan teknologi tepat guna kepada kelompok petani untuk meningkatkan produktivitas pertanian mereka.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pengmas latih petani teknologi.',
             'image' => null,
             'created_at' => now(),
@@ -324,7 +469,12 @@ class NewsSeeder extends Seeder
             'title' => 'Pengmas Buka Posko Bantuan Korban Bencana Alam',
             'department_id' => $departmentIds['pengmas'],
             'date' => '2025-05-14',
-            'body' => 'Departemen Pengmas mendirikan posko bantuan dan menyalurkan donasi kepada korban bencana alam di wilayah terdampak.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Posko bantuan bencana alam Pengmas.',
             'image' => 'pengmas_bencana.jpg',
             'created_at' => now(),
@@ -336,7 +486,12 @@ class NewsSeeder extends Seeder
             'title' => 'PSDM Gelar Job Fair dan Career Talk 2025',
             'department_id' => $departmentIds['psdm'],
             'date' => '2025-06-03',
-            'body' => 'Departemen Pengembangan Sumber Daya Manusia (PSDM) menyelenggarakan Job Fair dan Career Talk tahunan, menghubungkan mahasiswa dengan perusahaan terkemuka.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'PSDM adakan Job Fair dan Career Talk.',
             'image' => 'psdm_jobfair.jpg',
             'created_at' => now(),
@@ -346,7 +501,12 @@ class NewsSeeder extends Seeder
             'title' => 'Program Pengembangan Soft Skills oleh PSDM',
             'department_id' => $departmentIds['psdm'],
             'date' => '2025-05-30',
-            'body' => 'PSDM meluncurkan serangkaian program pengembangan soft skills seperti komunikasi efektif dan pemecahan masalah untuk meningkatkan kapabilitas mahasiswa.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'PSDM luncurkan program soft skills.',
             'image' => null,
             'created_at' => now(),
@@ -356,7 +516,12 @@ class NewsSeeder extends Seeder
             'title' => 'PSDM Adakan Pelatihan Wawancara Kerja dan Penulisan CV',
             'department_id' => $departmentIds['psdm'],
             'date' => '2025-05-26',
-            'body' => 'Untuk mempersiapkan mahasiswa menghadapi dunia kerja, PSDM menyelenggarakan pelatihan intensif tentang teknik wawancara dan penulisan CV yang menarik.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Pelatihan wawancara dan CV oleh PSDM.',
             'image' => null,
             'created_at' => now(),
@@ -366,7 +531,12 @@ class NewsSeeder extends Seeder
             'title' => 'PSDM Buka Pendaftaran Beasiswa Talenta Unggul',
             'department_id' => $departmentIds['psdm'],
             'date' => '2025-05-21',
-            'body' => 'Departemen PSDM membuka pendaftaran program beasiswa "Talenta Unggul" untuk mahasiswa yang menunjukkan potensi kepemimpinan dan inovasi.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'PSDM buka beasiswa talenta unggul.',
             'image' => null,
             'created_at' => now(),
@@ -376,7 +546,12 @@ class NewsSeeder extends Seeder
             'title' => 'PSDM Gelar Seminar Motivasi dari Tokoh Inspiratif',
             'department_id' => $departmentIds['psdm'],
             'date' => '2025-05-16',
-            'body' => 'Departemen PSDM sukses menggelar seminar motivasi dengan menghadirkan tokoh-tokoh inspiratif yang berbagi pengalaman dan tips meraih kesuksesan.',
+            'body' => '
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum eros urna, malesuada non tincidunt eu, tincidunt at dolor. Nulla scelerisque sem tortor, a maximus magna sagittis sed. Suspendisse accumsan ex sit amet volutpat euismod. Sed faucibus sit amet purus vitae interdum. Sed dictum odio tortor, id hendrerit lacus laoreet at. Mauris a tincidunt dui, aliquam condimentum diam. Praesent nec viverra risus. Maecenas lobortis eros eget orci elementum accumsan. Aliquam a urna mollis, varius libero ac, sodales urna. Quisque varius rutrum est eget ullamcorper. Nulla at est libero. Curabitur dictum velit ut leo consectetur maximus. Vestibulum ac porttitor dolor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec non urna turpis. Nunc ac maximus diam.</p>
+
+                <p>Quisque in justo at est sollicitudin venenatis ac vitae mi. Aliquam ac velit vel sem elementum venenatis. In volutpat hendrerit lobortis. Nam a tincidunt ante. Etiam nec iaculis ligula. Praesent consequat lorem ut diam varius rhoncus. Cras mauris ex, aliquam et volutpat ut, fringilla at elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Sed suscipit cursus ultrices. Suspendisse nulla ex, laoreet eget urna vitae, fringilla interdum neque.</p>
+
+                <p>In commodo ipsum a orci facilisis accumsan. Aenean eu condimentum velit. Vivamus volutpat iaculis metus, vel gravida eros fringilla et. Morbi elementum augue sagittis facilisis efficitur. Duis diam turpis, fermentum eget suscipit auctor, hendrerit et risus. Sed molestie posuere sem. Cras tincidunt aliquet aliquet. Nam lobortis, lacus sit amet ultricies tincidunt, velit ipsum semper ipsum, eu molestie velit purus at enim. Proin fermentum purus diam, id tempor quam lacinia sed. Etiam lobortis ullamcorper sagittis. In consequat sollicitudin sem, in suscipit nibh vestibulum eget. Quisque euismod neque tortor, eget auctor nibh placerat ut. Sed neque magna, aliquam a purus laoreet, ultrices feugiat massa. Nulla egestas neque et sapien sodales, in ultricies urna gravida.</p>',
             'desc' => 'Seminar motivasi dari PSDM.',
             'image' => null,
             'created_at' => now(),

@@ -11,19 +11,13 @@ class NewsController extends Controller
 {
     /**
      * Menampilkan daftar semua berita.
-     *
-     * @return \Illuminate\Http\JsonResponse
      */
-    public function index()
+    public static function index()
     {
         
-        $news = News::all()->map(function ($item) {
+        $news = News::orderBy('date', 'desc')->get()->map(function ($item) {
             $data = Carbon::parse($item->date);
-            $item->date = [
-                'month' => (int) $data->format('m'),
-                'date' => (int) $data->format('d'),
-                'year' => (int) $data->format('Y'),
-            ];
+            $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
             $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
             unset($item->department);
             unset($item->department_id);
@@ -31,9 +25,54 @@ class NewsController extends Controller
             unset($item->updated_at);
             return $item;
         });
+        return $news;
+    }
 
-        // Mengembalikan data dalam format JSON
-        return response()->json($news);
+    public static function getLatestNews($number = 1) {
+        $news = News::orderBy('date', 'desc')
+            ->take($number)
+            ->get()
+            ->map(function ($item) {
+                $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
+                $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
+                unset($item->department);
+                unset($item->department_id);
+                unset($item->created_at);
+                unset($item->updated_at);
+                return $item;
+            })
+            ->toArray();
+        return $news;
+    }
+
+    public static function getNewsWithPagination($perPage = 4){
+        $list =  News::orderBy('created_at', 'desc')
+        ->paginate($perPage);
+        $list->getCollection()->transform(function ($item) {
+            $item->date = Carbon::parse($item->date)->locale('id')->translatedFormat('j F Y');
+            $item->department_name = ucwords(str_replace('_', ' ', $item->department->name));
+            unset($item->department);
+            unset($item->department_id);
+            unset($item->created_at);
+            unset($item->updated_at);
+            return $item;
+        });
+        return $list;
+    }
+
+
+    public static function getNewsById($id)
+    {
+        $news = News::with('department')->find($id);
+        if ($news) {
+            $news->date = Carbon::parse($news->date)->locale('id')->translatedFormat('j F Y');
+            $news->department_name = ucwords(str_replace('_', ' ', $news->department->name));
+            unset($news->department);
+            unset($news->department_id);
+            unset($news->created_at);
+            unset($news->updated_at);
+        }
+        return $news;
     }
 
     /**
