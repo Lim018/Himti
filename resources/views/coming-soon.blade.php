@@ -34,7 +34,7 @@
                         <span class="title-letter">I</span>
                         <span class="title-letter">N</span>
                         <span class="title-letter">G</span>
-                        <span class="title-letter space">&nbsp;</span>
+                        <span class="title-letter space"> </span>
                         <span class="title-letter">S</span>
                         <span class="title-letter">O</span>
                         <span class="title-letter">O</span>
@@ -72,32 +72,43 @@
                         </div>
                     </div>
                     
-                    <div class="notification-form" data-aos="fade-up" data-aos-delay="800">
+                    {{-- <div class="notification-form" data-aos="fade-up" data-aos-delay="800">
                         <h3 class="form-title">Get Notified When We Launch</h3>
                         <div class="input-group">
                             <input type="email" class="form-control" placeholder="Your Email Address" aria-label="Email Address">
                             <button class="btn notify-btn" type="button" id="notify-btn">Notify Me</button>
                         </div>
                         <div class="form-message" id="form-message"></div>
-                    </div>
+                    </div> --}}
                     
-                    <div class="social-links-container" data-aos="fade-up" data-aos-delay="1000">
-                        <p>Follow our progress on social media:</p>
-                        <div class="social-links">
-                            <a href="#" class="social-link">
-                                <i class="social-icon">📷</i>
-                                <span>Instagram</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="social-icon">🐦</i>
-                                <span>Twitter</span>
-                            </a>
-                            <a href="#" class="social-link">
-                                <i class="social-icon">📺</i>
-                                <span>YouTube</span>
-                            </a>
-                        </div>
-                    </div>
+<div class="social-links-container" data-aos="fade-up" data-aos-delay="1000">
+    <p>Follow our progress on social media:</p>
+    <div class="social-links">
+        <a href="https://www.instagram.com/himti_ua/" class="social-link">
+            <i class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+            </i>
+            <span>Instagram</span>
+        </a>
+        <a href="https://www.tiktok.com/@himti_ua" class="social-link">
+            <i class="social-icon">
+                {{-- ICON DIPERBAIKI: Tidak terpotong dan gaya lebih serasi --}}
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="8" cy="18" r="3"></circle>
+                  <path d="M11 18V7"></path>
+                  <path d="M11 7c0-2.5 2-2.5 4-1s2 3 0 4-4 1-4-2"></path>
+                </svg>
+            </i>
+            <span>Tiktok</span>
+        </a>
+        <a href="https://www.youtube.com/@himtiunair" class="social-link">
+            <i class="social-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-youtube"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33A2.78 2.78 0 0 0 3.4 19c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2A29 29 0 0 0 23 11.75a29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+            </i>
+            <span>YouTube</span>
+        </a>
+    </div>
+</div>
                     
                     <div class="back-link" data-aos="fade-up" data-aos-delay="1200">
                         <a href="{{ url('/about') }}" class="btn back-btn">
@@ -186,39 +197,7 @@
         const countdownInterval = setInterval(updateCountdown, 1000);
         
         // Notification form
-        const notifyBtn = document.getElementById('notify-btn');
-        const formMessage = document.getElementById('form-message');
         
-        notifyBtn.addEventListener('click', function() {
-            const emailInput = this.previousElementSibling;
-            const email = emailInput.value.trim();
-            
-            if (email === '') {
-                formMessage.textContent = 'Please enter your email address.';
-                formMessage.classList.add('error');
-                formMessage.classList.remove('success');
-            } else if (!isValidEmail(email)) {
-                formMessage.textContent = 'Please enter a valid email address.';
-                formMessage.classList.add('error');
-                formMessage.classList.remove('success');
-            } else {
-                // Here you would typically send the email to your server
-                formMessage.textContent = 'Thank you! We\'ll notify you when we launch.';
-                formMessage.classList.add('success');
-                formMessage.classList.remove('error');
-                emailInput.value = '';
-            }
-            
-            formMessage.style.display = 'block';
-            setTimeout(() => {
-                formMessage.style.display = 'none';
-            }, 5000);
-        });
-        
-        function isValidEmail(email) {
-            const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-            return re.test(String(email).toLowerCase());
-        }
         
         // Animate title letters
         const titleLetters = document.querySelectorAll('.title-letter');
