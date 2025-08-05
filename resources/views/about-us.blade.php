@@ -10,15 +10,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8000/css/common.css" rel="stylesheet">
-    <link href="http://127.0.0.1:8000/css/about/style.css" rel="stylesheet">
+    <link href="https://himtiunair.com/css/common.css" rel="stylesheet">
+    <link href="https://himtiunair.com/css/about/style.css" rel="stylesheet">
 </head>
 <body>
     @include('components.navbar')
     <div class="himti-structure">
     <div class="background-pattern">
         <div class="pattern-right">
-            <img src="http://127.0.0.1:8000/images/about/background-SELARAS.png" alt="Background pattern">
+            <img src="https://himtiunair.com/images/about/background-SELARAS.png" alt="Background pattern">
         </div>
     </div>
 
@@ -28,14 +28,14 @@
             <h1 class="struktur-title">STRUKTUR</h1>
 
             <div class="team-photo" data-aos="zoom-in" data-aos-delay="300">
-                <img src="http://127.0.0.1:8000/images/about/KADEP-HIMTI.png" alt="HIMTI Structure Team" class="img-fluid">
+                <img src="https://himtiunair.com/images/about/KADEP-HIMTI.png" alt="HIMTI Structure Team" class="img-fluid">
             </div>
         </section>
 
         <section class="kahima-section" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-delay="200">
-                    <img src="http://127.0.0.1:8000/images/about/Kahima.png" alt="Muhammad Zaky" class="profile-image img-fluid">
+                    <img src="https://himtiunair.com/images/about/Kahima.png" alt="Muhammad Zaky" class="profile-image img-fluid">
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-delay="300">
                     <h2 class="position-title">KAHIMA</h2>
@@ -79,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-left" data-aos-delay="200">
-                    <img src="http://127.0.0.1:8000/images/about/Wakahima.png" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
+                    <img src="https://himtiunair.com/images/about/Wakahima.png" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
                 </div>
             </div>
         </section>
@@ -88,10 +88,10 @@
             <h2 class="section-title text-center mb-5">DEPARTEMEN</h2>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="200">
-                <a href="http://127.0.0.1:8000/department/ekonomi-kreatif" class="program-link">
+                <a href="https://himtiunair.com/department/ekonomi-kreatif" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/ekraf.png" alt="Ekonomi Kreatif" class="program-image">
+                            <img src="https://himtiunair.com/images/about/ekraf.png" alt="Ekonomi Kreatif" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -107,10 +107,10 @@
             </div>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="http://127.0.0.1:8000/department/media-informasi-dan-digitalisasi" class="program-link">
+                <a href="https://himtiunair.com/department/media-informasi-dan-digitalisasi" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/medinfo.png" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="https://himtiunair.com/images/about/medinfo.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -126,10 +126,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="http://127.0.0.1:8000/department/pendidikan" class="program-link">
+                <a href="https://himtiunair.com/department/pendidikan" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/pendidikan.png" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="https://himtiunair.com/images/about/pendidikan.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -145,10 +145,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="http://127.0.0.1:8000/department/pengabdian-masyarakat" class="program-link">
+                <a href="https://himtiunair.com/department/pengabdian-masyarakat" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="https://himtiunair.com/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -164,10 +164,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="http://127.0.0.1:8000/department/perhubungan" class="program-link">
+                <a href="https://himtiunair.com/department/perhubungan" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="https://himtiunair.com/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -183,10 +183,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="http://127.0.0.1:8000/department/pengembangan-sumber-daya-masyarakat" class="program-link">
+                <a href="https://himtiunair.com/department/pengembangan-sumber-daya-masyarakat" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="https://himtiunair.com/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -210,7 +210,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="http://127.0.0.1:8000/js/main.js"></script>
+    <script src="https://himtiunair.com/js/main.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/portal.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
