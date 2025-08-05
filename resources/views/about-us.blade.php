@@ -1,27 +1,41 @@
-@extends('layouts.app')
-
-@section('content')
-<div class="himti-structure">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="DcSgQMfDWqjrilhei837tPvkhUIoKA12c0MdBmWl">
+    <title>HIMTI - Teknik Informatika</title>
+    <link rel="preconnect" href="https://fonts.bunny.net">
+    <link href="https://fonts.bunny.net/css?family=inter:400,500,600,700,800" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/css/common.css" rel="stylesheet">
+    <link href="http://127.0.0.1:8000/css/about/style.css" rel="stylesheet">
+</head>
+<body>
+    @include('components.navbar')
+    <div class="himti-structure">
     <div class="background-pattern">
         <div class="pattern-right">
-            <img src="{{ asset('images/about/background-SELARAS.png') }}" alt="Background pattern">
+            <img src="http://127.0.0.1:8000/images/about/background-SELARAS.png" alt="Background pattern">
         </div>
     </div>
 
     <main class="container main-content">
-        <section class="hero-section text-center" data-aos="fade-up">
+        <section class="hero-section text-center mt-5" style="margin-top: 120px !important;" data-aos="fade-up">
             <h2 class="himti-subtitle">H I M T I</h2>
             <h1 class="struktur-title">STRUKTUR</h1>
 
             <div class="team-photo" data-aos="zoom-in" data-aos-delay="300">
-                <img src="{{ asset('images/about/KADEP-HIMTI.png') }}" alt="HIMTI Structure Team" class="img-fluid">
+                <img src="http://127.0.0.1:8000/images/about/KADEP-HIMTI.png" alt="HIMTI Structure Team" class="img-fluid">
             </div>
         </section>
 
         <section class="kahima-section" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-delay="200">
-                    <img src="{{ asset('images/about/Kahima.png') }}" alt="Muhammad Zaky" class="profile-image img-fluid">
+                    <img src="http://127.0.0.1:8000/images/about/Kahima.png" alt="Muhammad Zaky" class="profile-image img-fluid">
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-delay="300">
                     <h2 class="position-title">KAHIMA</h2>
@@ -65,7 +79,7 @@
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-left" data-aos-delay="200">
-                    <img src="{{ asset('images/about/Wakahima.png') }}" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
+                    <img src="http://127.0.0.1:8000/images/about/Wakahima.png" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
                 </div>
             </div>
         </section>
@@ -74,10 +88,10 @@
             <h2 class="section-title text-center mb-5">DEPARTEMEN</h2>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="200">
-                <a href="{{ url('department/ekonomi-kreatif') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/ekonomi-kreatif" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/ekraf.png') }}" alt="Ekonomi Kreatif" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/ekraf.png" alt="Ekonomi Kreatif" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -93,10 +107,10 @@
             </div>
             
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="{{ url('department/media-informasi-dan-digitalisasi') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/media-informasi-dan-digitalisasi" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/medinfo.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/medinfo.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -112,10 +126,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="{{ url('department/pendidikan') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/pendidikan" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/pendidikan.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/pendidikan.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -131,10 +145,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="{{ url('department/pengabdian-masyarakat') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/pengabdian-masyarakat" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -150,10 +164,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="{{ url('department/perhubungan') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/perhubungan" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -169,10 +183,10 @@
             </div>
 
             <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="300">
-                <a href="{{ url('department/pengembangan-sumber-daya-masyarakat') }}" class="program-link">
+                <a href="http://127.0.0.1:8000/department/pengembangan-sumber-daya-masyarakat" class="program-link">
                     <div class="row g-0">
                         <div class="col-md-4">
-                            <img src="{{ asset('images/about/pengmas.png') }}" alt="Media Informasi & Digitalisasi" class="program-image">
+                            <img src="http://127.0.0.1:8000/images/about/pengmas.png" alt="Media Informasi & Digitalisasi" class="program-image">
                         </div>
                         <div class="col-md-8 d-flex align-items-center">
                             <div class="program-content">
@@ -189,4 +203,21 @@
         </section>
     </main>
 </div>
-@endsection
+    <div id="back-to-top">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+            <path d="M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z"/>
+        </svg>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="http://127.0.0.1:8000/js/main.js"></script>
+    <script src="{{ asset('js/main.js') }}"></script>
+    <script src="{{ asset('js/portal.js') }}"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+    <script src="{{ asset('js/compro.js') }}"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>
