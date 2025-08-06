@@ -219,5 +219,6 @@
     <script>
         AOS.init();
     </script>
+    @include('components.footer')
 </body>
 </html>

@@ -50,9 +50,17 @@ Route::get('/portal/detail/{id}', function ($id) {
     return view('portal.show', compact('info', 'infoList'));
 });
 
-Route::get('/sop/{any?}', function () {
-    return view('coming-soon');
-})->where('any', '.*');
+// Route::get('/sop/{any?}', function () {
+//     return view('coming-soon');
+// })->where('any', '.*');
+
+Route::get('/sop/partnership', function () {
+    return view('partnership');
+});
+
+Route::get('/sop/medinfo', function () {
+    return view('medinfo');
+});
 
 Route::get('/features/{any?}', function () {
     return view('coming-soon');

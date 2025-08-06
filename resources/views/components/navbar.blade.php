@@ -32,7 +32,7 @@
     <a href="/portal">Portal</a>
 </div>
 <div class="SOP sub-menu">
-    <a href="" class="border-bottom">Partnership</a>
-    <a href="">Medinfo</a>
+    <a href="/sop/partnership" class="border-bottom">Partnership</a>
+    <a href="/sop/medinfo">Medinfo</a>
 </div>
 <script src="{{ asset('js/navbar.js') }}"></script>
