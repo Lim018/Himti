@@ -16,15 +16,15 @@
 
     <div class="menu-container">
         <a href="/news" class="menu">News</a>
-        <a href="/about" class="menu">About Us</a>
+        <a href="/coming" class="menu">About Us</a>
         
         {{-- INI BAGIAN YANG DIUBAH --}}
         <div class="menu-item-has-dropdown">
             <p class="menu sop-toggle">SOP<img class="toggle-img" src="{{ asset('assets/arrow.svg') }}"></p>
             {{-- Submenu SOP sekarang ada di dalam sini --}}
             <div class="sub-menu sop-menu">
-                <a href="/sop/partnership" class="border-bottom">Partnership</a>
-                <a href="/sop/medinfo">Medinfo</a>
+                <a href="https://wa.me/6281927833334" class="border-bottom">Partnership</a>
+                <a href="/sop/medinfo">Media Partner</a>
             </div>
         </div>
 
@@ -33,7 +33,7 @@
             <p class="menu features-toggle">Features <img class="toggle-img" src="{{ asset('assets/arrow.svg') }}"></p>
             {{-- Submenu Features sekarang ada di dalam sini --}}
             <div class="sub-menu features-menu">
-                <a href="" class="border-bottom">Berkas</a>
+                <a href="/coming" class="border-bottom">Berkas</a>
                 <a href="/marketplace" class="border-bottom">Marketplace</a>
                 <a href="/portal">Portal</a>
             </div>
