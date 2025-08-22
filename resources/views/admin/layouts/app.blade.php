@@ -45,6 +45,24 @@
                     </svg>
                     Dashboard
                 </a>
+
+
+                <div class="px-6 py-2 mt-6">
+                    <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Department</p>
+                </div>
+                <a href="{{ route('admin.departments.index') }}" class="sidebar-link flex items-center px-6 py-3 text-gray-700 hover:bg-blue-600 hover:text-white transition-colors {{ request()->routeIs('admin.departments.*') ? 'active' : '' }}">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a2 2 0 00-2-2h-3v-2a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h10a2 2 0 002-2v-2zM7 8h10M7 12h4"></path>
+                    </svg>
+                    All Department
+                </a>
+
+                <a href="{{ route('admin.sub-departments.index') }}" class="sidebar-link flex items-center px-6 py-3 text-gray-700 hover:bg-blue-600 hover:text-white transition-colors {{ request()->routeIs('admin.sub-departments.*') ? 'active' : '' }}">
+                    <svg class="w-5 h-5 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3M6 18h12"></path>
+                    </svg>
+                    Sub Department
+                </a>
                 
                 <div class="px-6 py-2 mt-6">
                     <p class="text-xs font-semibold text-gray-400 uppercase tracking-wider">Content</p>
@@ -122,5 +140,6 @@
             </main>
         </div>
     </div>
+    @stack('scripts')
 </body>
 </html>
