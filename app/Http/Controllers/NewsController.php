@@ -17,7 +17,7 @@ class NewsController extends Controller
 
         $news = News::published()
             ->publicNews()
-            ->when($featuredNews, function ($query) use ($featuredNews) {
+            ->when($featuredNews, callback: function ($query) use ($featuredNews) {
                 return $query->where('id', '!=', $featuredNews->id);
             })
             ->latest('published_at')

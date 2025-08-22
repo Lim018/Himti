@@ -18,6 +18,15 @@ class DepartmentController extends Controller
         return view('admin.departments.index', compact('departments'));
     }
 
+    public function showDetail(Department $department)
+    {
+        // Eager load relasi agar query lebih efisien
+        $department->load('detail', 'subDepartments');
+
+        // Mengirim data ke view
+        return view('departments.detail-department', compact('department'));
+    }
+
     public function create()
     {
         return view('admin.departments.create');

@@ -12,6 +12,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="http://127.0.0.1:8000/css/common.css" rel="stylesheet">
     <link href="http://127.0.0.1:8000/css/about/style.css" rel="stylesheet">
+
 </head>
 <body>
     @include('components.navbar')
@@ -86,28 +87,37 @@
 
         <section class="programs-section" data-aos="fade-up">
             <h2 class="section-title text-center mb-5">DEPARTEMEN</h2>
-            @foreach ($departments as $department)
-            <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="{{ 100 * ($loop->index + 1) }}">
-                <a href="{{ route('news.show', $department->slug) }}" class="program-link">
-                    <div class="row g-0">
-                        <div class="col-md-4">
-                            <img src="{{ asset($department->leadership_photo) }}" alt="{{ $department->name }}" class="program-image">
-                        </div>
-                        <div class="col-md-8 d-flex align-items-center">
-                            <div class="program-content">
-                                <div class="program-year">HIMTI 2025</div>
-                                <h3 class="program-title">{!! strtoupper($department->name) !!}</h3>
+            
+            @if(isset($departments) && $departments->count() > 0)
+                @foreach ($departments as $department)
+                <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="{{ 100 * ($loop->index + 1) }}">
+                    {{-- Menggunakan URL yang benar dengan slug --}}
+                    <a href="{{ url('/about-us/' . $department->slug) }}" class="program-link">
+                        <div class="row g-0">
+                            <div class="col-md-4">
+                                {{-- Menampilkan foto dari database --}}
+                                <img src="{{ asset($department->leadership_photo) }}" alt="{{ $department->name }}" class="program-image">
                             </div>
-                            <div class="program-arrow">
-                                <i class="arrow-icon">›</i>
+                            <div class="col-md-8 d-flex align-items-center">
+                                <div class="program-content">
+                                    <div class="program-year">HIMTI 2025</div>
+                                    {{-- Menampilkan nama dari database --}}
+                                    <h3 class="program-title">{!! strtoupper($department->name) !!}</h3>
+                                </div>
+                                <div class="program-arrow">
+                                    <i class="arrow-icon">›</i>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                </a>
-            </div>
-            @endforeach
-          
+                    </a>
+                </div>
+                @endforeach
+            @else
+                <p class="text-center">Tidak ada departemen untuk ditampilkan.</p>
+            @endif
+            
         </section>
+
     </main>
 </div>
     <div id="back-to-top">

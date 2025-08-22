@@ -1,5 +1,6 @@
 <?php
 
+use App\Models\Department;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\NewsController;
@@ -8,11 +9,11 @@ use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DepartmentController;
 use App\Http\Controllers\MarketplaceController;
+use App\Http\Controllers\SubDepartmentController;
 use App\Http\Controllers\Admin\DashboardController;
 use App\Http\Controllers\Admin\NewsController as AdminNewsController;
 use App\Http\Controllers\Admin\OrderController as AdminOrderController;
 use App\Http\Controllers\Admin\ProductController as AdminProductController;
-use App\Http\Controllers\SubDepartmentController;
 
 Route::middleware('guest')->group(function () {
     // Login
@@ -33,6 +34,13 @@ Route::prefix('news')->name('news.')->group(function () {
     Route::get('/', [NewsController::class, 'index'])->name('index');
     Route::get('/{news}', [NewsController::class, 'show'])->name('show');
 });
+
+Route::get('/about-us', function () {
+    $departments = Department::all(); // Mengambil semua data departemen
+    return view('about-us', compact('departments')); // Mengirim data ke view
+});
+
+Route::get('/about-us/{department:slug}', [DepartmentController::class, 'showDetail'])->name('departments.showDetail');
 
 // Portal HIMTI Routes
 Route::prefix('portal')->name('portal.')->group(function () {
