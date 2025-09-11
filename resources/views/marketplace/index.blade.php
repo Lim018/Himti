@@ -30,43 +30,29 @@
     <div class="container mx-auto flex flex-col items-center">
         <h1 class="text-5xl font-bold text-blue-800 text-center mb-2 w-full pt-24">CATALOG</h1>
 
-        <!-- Toolbar -->
-        <div class="w-full flex flex-col sm:flex-row justify-between items-center gap-4">
-            <!-- Search -->
-            <form method="get" class="w-full">
-                <input type="text"
-                    class="w-full p-3 rounded-lg shadow-sm bg-zinc-200 focus:outline-none focus:ring-2 focus:ring-blue-500"
-                    placeholder="Search items...">
-            </form>
-
-            <!-- Actions -->
-            <div class="flex flex-row gap-2 w-full sm:w-auto">
-                <button
-                    class="px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-700 transition w-full sm:w-auto">
-                    Filter
-                </button>
-                <button
-                    class="px-4 py-2 bg-blue-600 text-white rounded-lg shadow hover:bg-blue-700 transition w-full sm:w-auto">
-                    Sort
-                </button>
-            </div>
-        </div>
-
-        @if($products->count() > 0)
-        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full pb-12">
-            @foreach($products as $product)
-                <a href="{{ route('marketplace.show', $product) }}" class="block">
-                    <div class="bg-white rounded-lg shadow-md overflow-hidden hover:shadow-lg transition-shadow">
-                        <img src="{{ $product->featured_image ? asset('storage/' . $product->featured_image) : '/placeholder.svg?height=200&width=300' }}" 
-                             alt="{{ $product->name }}"   class="w-full h-48 object-cover">
-                        <div class="p-4 text-start">
-                            <h2 class="text-lg font-semibold mb-2">{{ $product->name }}</h2>
-                            <p class="text-blue-800 text-sm">Rp. {{ number_format($product->price, 0, ',', '.') }}</p>
+        @if ($products->count() > 0)
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
+                @foreach ($products as $product)
+                    <a href="{{ route('marketplace.show', $product) }}" class="block group">
+                        <div
+                            class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-md transition-transform transform hover:-translate-y-2 hover:scale-105 duration-300">
+                            <div class="relative">
+                                <img src="{{ $product->featured_image ? asset('storage/' . $product->featured_image) : '/placeholder.svg?height=200&width=300' }}"
+                                    alt="{{ $product->name }}"
+                                    class="w-full h-56 object-cover group-hover:brightness-90 transition duration-300">
+                               
+                            </div>
+                            <div class="p-5 text-start">
+                                <h2 class="text-lg font-bold mb-1 group-hover:text-blue-700 transition">{{ $product->name }}
+                                </h2>
+                                <p class="text-blue-800 font-semibold">Rp. {{ number_format($product->price, 0, ',', '.') }}
+                                </p>
+                            </div>
                         </div>
-                    </div>
-                </a>
-            @endforeach
-        </div>
+                    </a>
+                @endforeach
+            </div>
+
         @endif
     </div>
 
