@@ -30,12 +30,9 @@
     <div class="container mx-auto flex flex-col items-center">
 
         <h1 class="text-5xl font-bold text-blue-800 text-center mb-2 w-full pt-24">BUNDLE</h1>
-        @php
-            $bundleProducts = $products->whereBetween('id', [7, 13]);
-        @endphp
-        @if ($bundleProducts->count() > 0)
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
-                @foreach ($bundleProducts as $product)
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
+            @foreach ($products as $product)
+                @if ($product->id >= 1 && $product->id <= 13)
                     <a href="{{ route('marketplace.show', $product) }}" class="block group">
                         <div
                             class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-md transition-transform transform hover:-translate-y-2 hover:scale-105 duration-300">
@@ -50,17 +47,14 @@
                             </div>
                         </div>
                     </a>
-                @endforeach
-            </div>
-        @endif
+                @endif
+            @endforeach
+        </div>
 
         <h1 class="text-5xl font-bold text-blue-800 text-center mb-2 w-full pt-24">CATALOG</h1>
-        @php
-            $catalogProducts = $products->where('id', '>=', 14);
-        @endphp
-        @if ($catalogProducts->count() > 0)
-            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
-                @foreach ($catalogProducts as $product)
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
+            @foreach ($products as $product)
+                @if ($product->id >= 14)
                     <a href="{{ route('marketplace.show', $product) }}" class="block group">
                         <div
                             class="bg-white rounded-2xl shadow-md overflow-hidden hover:shadow-md transition-transform transform hover:-translate-y-2 hover:scale-105 duration-300">
@@ -75,9 +69,9 @@
                             </div>
                         </div>
                     </a>
-                @endforeach
-            </div>
-        @endif
+                @endif
+            @endforeach
+        </div>
 
     </div>
 
