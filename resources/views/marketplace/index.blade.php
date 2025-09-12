@@ -31,7 +31,7 @@
 
         <h1 class="text-5xl font-bold text-blue-800 text-center mb-2 w-full pt-24">BUNDLE</h1>
         @php
-            $bundleProducts = $products->whereBetween('id', [1, 13]);
+            $bundleProducts = $products->whereBetween('id', [7, 13]);
         @endphp
         @if ($bundleProducts->count() > 0)
             <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 w-full pb-20 mt-10">
