@@ -22,7 +22,7 @@ class MarketplaceController extends Controller
         $products = Product::active()
             ->inStock()
             ->latest()
-            ->paginate(12);
+            ->paginate(20);
 
         return view('marketplace.index', compact('featuredProducts', 'products'));
     }
