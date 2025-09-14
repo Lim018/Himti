@@ -12,7 +12,7 @@
 <body>
    @include('components.navbar')
     <section class="hero">
-        <div class="overlay" style="background-image: url('{{ asset('images/news/medinfo.png') }}');">
+        <div class="overlay" style="background-image: url('{{ asset('images/compro/musma.jpg') }}');">
             <div class="overlay-content">
                 <h1>{{ $news->title }}</h1>
                 <p>{{ $news->author->name }}</p>
