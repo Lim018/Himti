@@ -53,7 +53,7 @@
                         <!-- Nama -->
                         <div>
                             <label for="customer_name" class="block text-sm font-medium text-gray-700 mb-2">
-                                Nama Lengkap <span class="text-red-500">*</span>
+                                Nama Panjang_Nickname <span class="text-red-500">*</span>
                             </label>
                             <input type="text" 
                                    id="customer_name" 
