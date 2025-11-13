@@ -19,7 +19,7 @@
     <div class="himti-structure">
     <div class="background-pattern">
         <div class="pattern-right">
-            <img src="http://127.0.0.1:8000/images/about/background-SELARAS.png" alt="Background pattern">
+            <img src="/images/about/background-SELARAS.png" alt="Background pattern">
         </div>
     </div>
 
@@ -29,29 +29,28 @@
             <h1 class="struktur-title">STRUKTUR</h1>
 
             <div class="team-photo" data-aos="zoom-in" data-aos-delay="300">
-                <img src="http://127.0.0.1:8000/images/about/KADEP-HIMTI.png" alt="HIMTI Structure Team" class="img-fluid">
+                <img src="/images/about/KADEP-HIMTI.png" alt="HIMTI Structure Team" class="img-fluid">
             </div>
         </section>
 
         <section class="kahima-section" data-aos="fade-up">
             <div class="row">
                 <div class="col-md-3" data-aos="fade-right" data-aos-delay="200">
-                    <img src="http://127.0.0.1:8000/images/about/Kahima.png" alt="Muhammad Zaky" class="profile-image img-fluid">
+                    <img src="/images/about/Kahima.png" alt="Muhammad Zaky" class="profile-image img-fluid">
                 </div>
                 <div class="col-md-9" data-aos="fade-left" data-aos-delay="300">
                     <h2 class="position-title">KAHIMA</h2>
                     <h3 class="person-name">Muhammad Zaky</h3>
                     <div class="profile-card">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur odio sem, in pharetra turpis
-                            faucibus in. Phasellus fringilla ultricies ullamcorper. Pellentesque gravida nisl nunc, id laoreet urna
-                            pulvinar vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. In dictum sit amet nunc vel
-                            pharetra. Curabitur facilisis ex vitae blandit consectetur. Donec ut facilisis nisl, vitae pretium arcu.
-                            In congue purus eleifend risus hendrerit, eu finibus lectus eleifend.
+                            Menjadi bagian dari HIMTI bukan hanya tentang menjalankan program kerja, tetapi tentang membangun nilai, karakter, dan solidaritas di antara mahasiswa Teknik Informatika.
                         </p>
                         <p>
-                            Nulla nec libero tortor. Fusce vehicula quam risus, nec tempus turpis luctus vel. Fusce eros diam,
-                            porttitor vel ante dignissim, ullamcorper vehicula mi.
+                            Dalam setiap langkah, kita belajar bahwa teknologi hanyalah alat — yang lebih penting adalah manusia di baliknya, yang mau berjuang, berinovasi, dan berbagi untuk kemajuan bersama.
+                        </p>
+                        <p>
+                            HIMTI adalah ruang tumbuh. Di sini kita belajar bukan hanya tentang ilmu, tapi juga tentang tanggung jawab, kepemimpinan, dan empati.
+Saya percaya bahwa perubahan besar selalu dimulai dari niat kecil dan kerja sama yang tulus.
                         </p>
                         <p class="quote">kata kata dari kahima</p>
                     </div>
@@ -66,21 +65,23 @@
                     <h3 class="person-name text-end">Fitria Indah Novitasari</h3>
                     <div class="profile-card">
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed consectetur odio sem, in pharetra turpis
-                            faucibus in. Phasellus fringilla ultricies ullamcorper. Pellentesque gravida nisl nunc, id laoreet urna
-                            pulvinar vel. Interdum et malesuada fames ac ante ipsum primis in faucibus. In dictum sit amet nunc vel
-                            pharetra. Curabitur facilisis ex vitae blandit consectetur. Donec ut facilisis nisl, vitae pretium arcu.
-                            In congue purus eleifend risus hendrerit, eu finibus lectus eleifend.
+                            Di HIMTI, kita belajar bahwa kekuatan sejati sebuah organisasi tidak hanya terletak pada kecerdasan anggotanya, tetapi pada kemampuan untuk saling memahami, mendukung, dan tumbuh bersama.
                         </p>
                         <p>
-                            Nulla nec libero tortor. Fusce vehicula quam risus, nec tempus turpis luctus vel. Fusce eros diam,
-                            porttitor vel ante dignissim, ullamcorper vehicula mi.
+                            Sebagai Wakil Ketua, saya ingin mengajak seluruh keluarga besar HIMTI untuk terus menjaga semangat kolaborasi dan kebersamaan dalam setiap langkah.
+                        </p>
+                        <p>
+                            Mari kita jadikan setiap program bukan sekadar kegiatan, melainkan perjalanan pembelajaran yang membentuk karakter dan menumbuhkan rasa tanggung jawab sosial.
+                        </p>
+                        <p>
+                            Dalam setiap tantangan, selalu ada peluang untuk tumbuh. Dalam setiap perbedaan, selalu ada ruang untuk saling menghargai.
+Bersama, kita wujudkan HIMTI yang inklusif, berdaya, dan inspiratif — tempat di mana setiap suara didengar, setiap ide dihargai, dan setiap langkah membawa kita lebih dekat pada tujuan bersama.”
                         </p>
                         <p class="quote">kata kata dari wakahima</p>
                     </div>
                 </div>
                 <div class="col-md-3" data-aos="fade-left" data-aos-delay="200">
-                    <img src="http://127.0.0.1:8000/images/about/Wakahima.png" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
+                    <img src="/images/about/Wakahima.png" alt="Fitria Indah Novitasari" class="profile-image img-fluid">
                 </div>
             </div>
         </section>
@@ -92,7 +93,7 @@
                 @foreach ($departments as $department)
                 <div class="program-card mb-5" data-aos="fade-up" data-aos-delay="{{ 100 * ($loop->index + 1) }}">
                     {{-- Menggunakan URL yang benar dengan slug --}}
-                    <a href="{{ url('/about-us/' . $department->slug) }}" class="program-link">
+                    {{-- <a href="{{ url('/about-us/' . $department->slug) }}" class="program-link"> --}}
                         <div class="row g-0">
                             <div class="col-md-4">
                                 {{-- Menampilkan foto dari database --}}
@@ -105,11 +106,11 @@
                                     <h3 class="program-title">{!! strtoupper($department->name) !!}</h3>
                                 </div>
                                 <div class="program-arrow">
-                                    <i class="arrow-icon">›</i>
+                                    <i class="arrow-icon"></i>
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    {{-- </a> --}}
                 </div>
                 @endforeach
             @else
@@ -127,7 +128,7 @@
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="http://127.0.0.1:8000/js/main.js"></script>
+    <script src="/js/main.js"></script>
     <script src="{{ asset('js/main.js') }}"></script>
     <script src="{{ asset('js/portal.js') }}"></script>
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
